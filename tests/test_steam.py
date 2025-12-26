@@ -7,10 +7,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class DocumentReadyStateComplete:
+class text_not_empty:
+    def __init__(self, locator):
+        self.locator = locator
+
     def __call__(self, driver):
-        state = driver.execute_script("return document.readyState")
-        return state == 'complete'
+        element = driver.find_element(*self.locator)
+        text = element.text.strip()
+        return text if text else False
 
 
 WAIT_TIMEOUT = 15
@@ -22,7 +26,8 @@ PASSWORD_INPUT_LOCATOR = (By.XPATH, "//*[contains(@type,'password')]")
 SUBMIT_BUTTON_LOCATOR = (By.XPATH, "(//button[@type='submit'])[2]")
 SUBMIT_BUTTON_DIS_LOCATOR = (By.XPATH, "//button[@type='submit' and @disabled]")
 SUBMIT_BUTTON_NOT_DIS_LOCATOR = (By.XPATH, "//button[@type='submit' and not(@disabled)]")
-ERROR_TEXT_LOCATOR = (By.XPATH, "(//button[@type='submit'])[2]/parent::div/following-sibling::div[normalize-space(.)!=''][1]")
+ERROR_TEXT_LOCATOR = (By.XPATH,
+                      "(//button[@type='submit'])[2]/parent::div/following-sibling::div[1]")
 EXPECTED_ERROR_TEXT = 'Please check your password and account name and try again.'
 OPTIONS = webdriver.ChromeOptions()
 
@@ -41,7 +46,7 @@ def test_steam(driver):
 
     # 1. Открываем главную страницу
     driver.get(URL)
-    WebDriverWait(driver, WAIT_TIMEOUT).until(DocumentReadyStateComplete())
+    wait.until(EC.visibility_of_element_located(LOGIN_BUTTON_LOCATOR))
 
     # 2. Нажимаем кнопку Войти
     login_button = wait.until(
@@ -74,13 +79,8 @@ def test_steam(driver):
     )
 
     # 7. Появляется сообщение об ошибке
-    error_text = wait.until(EC.presence_of_element_located(ERROR_TEXT_LOCATOR))
-
-    actual_error_text = wait.until(lambda d: (
-            error_text.get_attribute('textContent') or ''
-    ).strip())
+    actual_error_text = wait.until(text_not_empty(ERROR_TEXT_LOCATOR))
 
     assert actual_error_text == EXPECTED_ERROR_TEXT, (
         f'Ожидаемый текст ошибки: {EXPECTED_ERROR_TEXT}, но получен: {actual_error_text}'
     )
-
