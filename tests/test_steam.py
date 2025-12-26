@@ -27,8 +27,9 @@ SUBMIT_BUTTON_LOCATOR = (By.XPATH, "(//button[@type='submit'])[2]")
 SUBMIT_BUTTON_DIS_LOCATOR = (By.XPATH, "//button[@type='submit' and @disabled]")
 SUBMIT_BUTTON_NOT_DIS_LOCATOR = (By.XPATH, "//button[@type='submit' and not(@disabled)]")
 ERROR_TEXT_LOCATOR = (By.XPATH,
-                      "(//button[@type='submit'])[2]/parent::div/following-sibling::div[1]")
-EXPECTED_ERROR_TEXT = 'Please check your password and account name and try again.'
+                      "(//button[@type='submit'])[2]/parent::div/following-sibling::"
+                      "div[string-length(normalize-space(.)) > 1][1]")
+EXPECTED_ERROR_TEXT = 'Пожалуйста, проверьте свой пароль и имя аккаунта и попробуйте снова.'
 OPTIONS = webdriver.ChromeOptions()
 
 
@@ -62,8 +63,8 @@ def test_steam(driver):
     faker = Faker()
     username = faker.user_name()
     password = faker.password()
-    driver.find_element(*USERNAME_INPUT_LOCATOR).send_keys(username)
-    driver.find_element(*PASSWORD_INPUT_LOCATOR).send_keys(password)
+    wait.until(EC.visibility_of_element_located(USERNAME_INPUT_LOCATOR)).send_keys(username)
+    wait.until(EC.visibility_of_element_located(PASSWORD_INPUT_LOCATOR)).send_keys(password)
     submit_button = wait.until(
         EC.element_to_be_clickable(SUBMIT_BUTTON_LOCATOR))
     submit_button.click()
