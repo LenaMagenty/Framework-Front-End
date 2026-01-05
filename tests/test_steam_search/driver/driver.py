@@ -1,17 +1,18 @@
 from selenium import webdriver
+from tests.test_steam_search.config.config_reader import ConfigReader
 
 
 class DriverSingleton:
     _driver = None
 
     @classmethod
-    def get_driver(cls) -> webdriver.Chrome:
+    def get_driver(cls):
+        config = ConfigReader()
         if cls._driver is None:
             options = webdriver.ChromeOptions()
-            options.add_argument('--window-size=1920,1080')
-            options.add_argument('--incognito')
+            for arg in config.get('chrome_options'):
+                options.add_argument(arg)
             cls._driver = webdriver.Chrome(options=options)
-            cls._driver.set_page_load_timeout(15)
         return cls._driver
 
     @classmethod

@@ -2,7 +2,7 @@ import pytest
 from driver.driver import DriverSingleton
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='function')
 def driver():
     drv = DriverSingleton.get_driver()
     yield drv

@@ -7,14 +7,16 @@ from pages.home_page import HomePage
     ('Fallout', 20),
 ])
 def test_search_sort_highest_price_and_get_n(driver, game_name, n):
-    home = HomePage(driver).open_home()
+    home = HomePage(driver).open().assert_opened()
     results = home.search(game_name)
 
     results.sort_by_highest_price()
-    titles = results.get_first_n_titles(n)
+    items = results.get_first_n_items(n)
 
-    assert len(titles) == n, f'Ожидали {n} игр, получили {len(titles)}'
+    assert len(items) == n, f'Ожидали {n} игр, получили {len(items)}'
 
-    for i, title in enumerate(titles, start=1):
-        print(f'{i}. {title}')
+    prices = [price for _, price in items]
 
+    assert all(prices[i] >= prices[i + 1] for i in range(len(prices) - 1)), (
+            "Сортировка по убыванию цены работает неверно"
+    )
