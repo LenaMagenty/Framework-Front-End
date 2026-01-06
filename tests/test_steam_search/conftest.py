@@ -4,6 +4,6 @@ from driver.driver import DriverSingleton
 
 @pytest.fixture(scope='function')
 def driver():
-    drv = DriverSingleton.get_driver()
-    yield drv
+    driver = DriverSingleton.get_driver()
+    yield driver
     DriverSingleton.quit_driver()
