@@ -6,6 +6,7 @@ from config.config_reader import ConfigReader
 @pytest.mark.parametrize('game_name,n', [
     ('The Witcher', 10),
     ('Fallout', 20),
+    ('Apex Legends', 10)
 ])
 def test_search_sort_highest_price_and_get_n(driver, game_name, n):
     config = ConfigReader()
@@ -18,11 +19,9 @@ def test_search_sort_highest_price_and_get_n(driver, game_name, n):
 
     results.sort_by_highest_price()
     prices = results.get_first_n_items(n)
-    print(prices)
 
     prices = [price for _, price in prices]
 
     assert all(prices[i] >= prices[i + 1] for i in range(len(prices) - 1)), (
         "Сортировка по убыванию цены работает неверно"
     )
-
