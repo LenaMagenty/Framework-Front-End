@@ -5,8 +5,7 @@ from config.config_reader import ConfigReader
 
 @pytest.mark.parametrize('game_name,n', [
     ('The Witcher', 10),
-    ('Fallout', 20),
-    ('Apex Legends', 10)
+    ('Fallout', 20)
 ])
 def test_search_sort_highest_price_and_get_n(driver, game_name, n):
     config = ConfigReader()

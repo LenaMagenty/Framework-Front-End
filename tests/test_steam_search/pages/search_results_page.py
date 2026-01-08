@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 from selenium.webdriver.support import expected_conditions as EC
 from pages.expected_conditions_custom import ElementInResultRow
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class SearchResultsPage(BasePage):
@@ -12,7 +13,7 @@ class SearchResultsPage(BasePage):
     RESULT_ROWS = (By.XPATH, "//*[@id='search_resultsRows']//a[contains(@class,'search_result_row')]")
     TITLE_IN_ROW = (By.XPATH, ".//span[@class='title']")
     SEARCH_RESULT_OPACITY = (
-        By.XPATH, "//div[contains(@style, 'opacity')]"
+        By.XPATH, "//*[@id='search_result_container' and contains(@style, 'opacity')]"
     )
     PRICE_BLOCK_IN_ROW = (
         By.XPATH, ".//div[contains(@class,'discount_block search_discount_block') "
@@ -28,8 +29,10 @@ class SearchResultsPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(self.SORT_TRIGGER)).click()
         self.wait.until(EC.element_to_be_clickable(self.PRICE_DESC_OPTION)).click()
 
-        self.wait.until(EC.visibility_of_element_located(self.SEARCH_RESULT_OPACITY))
-        self.wait.until(EC.visibility_of_element_located(self.RESULTS_CONTAINER))
+        fast_wait = WebDriverWait(self.driver, 2, poll_frequency=0.05)
+        fast_wait.until(EC.presence_of_element_located(self.SEARCH_RESULT_OPACITY))
+        self.wait.until(EC.invisibility_of_element_located(self.SEARCH_RESULT_OPACITY))
+
         self.wait.until(EC.presence_of_all_elements_located(self.RESULT_ROWS))
 
         return self
