@@ -17,7 +17,8 @@ class SearchResultsPage(BasePage):
     )
     PRICE_BLOCK_IN_ROW = (
         By.XPATH, ".//div[contains(@class,'discount_block search_discount_block') "
-                  "and @data-price-final]")
+                  "and @data-price-final]"
+    )
     UNIQUE_ELEMENT = SORT_TRIGGER
 
     def wait_loaded(self, n: int = 1):
