@@ -17,10 +17,11 @@ def test_search_sort_highest_price_and_get_n(driver, game_name, n):
     results.wait_opened()
 
     results.sort_by_highest_price()
-    prices = results.get_first_n_items(n)
+    items = results.get_first_n_items(n)
 
-    prices = [price for _, price in prices]
+    prices = [element[1] for element in items]
 
-    assert all(prices[i] >= prices[i + 1] for i in range(len(prices) - 1)), (
+    assert prices == sorted(prices, reverse=True), (
         "Сортировка по убыванию цены работает неверно"
     )
+
