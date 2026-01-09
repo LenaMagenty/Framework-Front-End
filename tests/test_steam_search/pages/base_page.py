@@ -13,4 +13,4 @@ class BasePage:
         self.wait = WebDriverWait(self.driver, self.config.get('timeout'))
 
     def wait_opened(self):
-        self.wait.until(EC.visibility_of_element_located(self.UNIQUE_ELEMENT))
+        self.wait.until(EC.presence_of_element_located(self.UNIQUE_ELEMENT))

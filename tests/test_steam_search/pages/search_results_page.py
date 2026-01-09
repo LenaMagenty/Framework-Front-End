@@ -36,13 +36,11 @@ class SearchResultsPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(self.SORT_TRIGGER)).click()
         self.wait.until(EC.element_to_be_clickable(self.PRICE_DESC_OPTION)).click()
 
-        fast_wait = WebDriverWait(self.driver, 15, poll_frequency=0.05)
+        fast_wait = WebDriverWait(self.driver, self.config.get('timeout'), poll_frequency=0.05)
         fast_wait.until(EC.presence_of_element_located(self.SEARCH_RESULT_OPACITY))
         self.wait.until(EC.invisibility_of_element_located(self.SEARCH_RESULT_OPACITY))
 
         self.wait.until(EC.presence_of_all_elements_located(self.RESULT_ROWS))
-
-        return self
 
     def get_first_n_items(self, n):
         self.wait.until(EC.visibility_of_element_located(self.RESULTS_CONTAINER))
