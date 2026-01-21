@@ -1,0 +1,402 @@
+2026-01-21T18:29:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:31:36 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:31:37 - INFO - Browser[f296fa25f1bc7de1decab2dfe8a67dcc]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:31:39 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:31:39 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:31:39 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:31:39 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:31:39 - INFO - Browser[f296fa25f1bc7de1decab2dfe8a67dcc]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="f296fa25f1bc7de1decab2dfe8a67dcc", element="f.36BF812435D92AE7962CC06F537C1359.d.CB035E9EC68D51674FEB9C35D551CF56.e.5")>,)"
+2026-01-21T18:31:39 - INFO - Open Explorer and drag file to browser dropzone
+2026-01-21T18:32:00 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:38:30 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:38:32 - INFO - Browser[5e22448c799521ac987b3eb833ee1703]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:38:33 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:38:33 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:38:33 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:38:33 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:38:33 - INFO - Browser[5e22448c799521ac987b3eb833ee1703]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="5e22448c799521ac987b3eb833ee1703", element="f.0106EC164323AF9DC00E2409094D56E5.d.B3CBE1F1C9D58DF1D761C9406448D1A4.e.5")>,)"
+2026-01-21T18:38:33 - INFO - Open Explorer
+2026-01-21T18:38:36 - INFO - Select file
+2026-01-21T18:38:37 - INFO - Drag file to dropzone
+2026-01-21T18:38:42 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:38:53 - ERROR - WebElement[Dropzone file name]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b04c88d5
+	0x7ff6b04c8930
+	0x7ff6b02a165d
+	0x7ff6b02f9a33
+	0x7ff6b02f9d3c
+	0x7ff6b034df67
+	0x7ff6b034ac97
+	0x7ff6b02eac29
+	0x7ff6b02eba93
+	0x7ff6b07e0620
+	0x7ff6b07daf60
+	0x7ff6b07f96c6
+	0x7ff6b04e5dd4
+	0x7ff6b04eed7c
+	0x7ff6b04d1ff4
+	0x7ff6b04d21a5
+	0x7ff6b04b7ed2
+	0x7ffa11397344
+	0x7ffa130a26b1
+
+2026-01-21T18:39:34 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:39:36 - INFO - Browser[7a34b0a1e38725037bdff9f48eced111]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:40:01 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:40:02 - INFO - Browser[b798a227c50a5c7e5c777f272b69436c]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:40:04 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:40:04 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:40:04 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:40:04 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:40:04 - INFO - Browser[b798a227c50a5c7e5c777f272b69436c]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="b798a227c50a5c7e5c777f272b69436c", element="f.02DD69E9D019AD11C298AE66F0704343.d.8F0B726B2B4EC845CB6888C1DDDDCF2A.e.5")>,)"
+2026-01-21T18:40:04 - INFO - Open Explorer
+2026-01-21T18:40:06 - INFO - Select file
+2026-01-21T18:40:08 - INFO - Drag file to dropzone
+2026-01-21T18:40:15 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:40:15 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//div[contains(@class,'dz-success-mark')]//span[normalize-space()='✔']")
+2026-01-21T18:40:15 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:40:15 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//div[contains(@class,'dz-success-mark')]//span[normalize-space()='✔']")
+2026-01-21T18:40:24 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:40:26 - INFO - Browser[d2ea319b8ce94c410e0a7294ce9b8c4a]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:40:37 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:40:39 - INFO - Browser[f3372690238bf12e65267f4a50147c9b]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:41:06 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:41:07 - INFO - Browser[33817585afe620a8a8dca2fa1da671e4]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:41:26 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:41:26 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:41:26 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:41:27 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:41:27 - INFO - Browser[33817585afe620a8a8dca2fa1da671e4]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="33817585afe620a8a8dca2fa1da671e4", element="f.CC7AF808D8F932E4430BE1EBB3042709.d.3EF41F897508F2861ED5945D747976F4.e.5")>,)"
+2026-01-21T18:41:27 - INFO - Open Explorer
+2026-01-21T18:41:29 - INFO - Select file
+2026-01-21T18:41:31 - INFO - Drag file to dropzone
+2026-01-21T18:41:37 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:41:37 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//div[contains(@class,'dz-success-mark')]//span[normalize-space()='✔']")
+2026-01-21T18:41:37 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:41:37 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//div[contains(@class,'dz-success-mark')]//span[normalize-space()='✔']")
+2026-01-21T18:41:44 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:41:45 - INFO - Browser[2a21779e21ee0f0ff2565399b1ba1fbd]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:41:47 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:41:47 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:41:47 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:41:47 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:41:47 - INFO - Browser[2a21779e21ee0f0ff2565399b1ba1fbd]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="2a21779e21ee0f0ff2565399b1ba1fbd", element="f.002E1EEBADA8A3BE35BE8B2213A8EA40.d.F9490B5AA0001C3532D80F6537776D02.e.5")>,)"
+2026-01-21T18:41:47 - INFO - Open Explorer
+2026-01-21T18:41:49 - INFO - Select file
+2026-01-21T18:41:51 - INFO - Drag file to dropzone
+2026-01-21T18:41:58 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:42:08 - ERROR - WebElement[Dropzone file name]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b04c88d5
+	0x7ff6b04c8930
+	0x7ff6b02a165d
+	0x7ff6b02f9a33
+	0x7ff6b02f9d3c
+	0x7ff6b034df67
+	0x7ff6b034ac97
+	0x7ff6b02eac29
+	0x7ff6b02eba93
+	0x7ff6b07e0620
+	0x7ff6b07daf60
+	0x7ff6b07f96c6
+	0x7ff6b04e5dd4
+	0x7ff6b04eed7c
+	0x7ff6b04d1ff4
+	0x7ff6b04d21a5
+	0x7ff6b04b7ed2
+	0x7ffa11397344
+	0x7ffa130a26b1
+
+2026-01-21T18:42:18 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:42:19 - INFO - Browser[eba88d9e6e8f7b3716aaabbe4d2ccf66]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:42:21 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:42:21 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:42:21 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:42:21 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:42:21 - INFO - Browser[eba88d9e6e8f7b3716aaabbe4d2ccf66]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="eba88d9e6e8f7b3716aaabbe4d2ccf66", element="f.FC3CAFA668B0AC62FD1F0A837301C921.d.BB4A2A81536E3CF4E5B69634AD047A1B.e.5")>,)"
+2026-01-21T18:42:21 - INFO - Open Explorer
+2026-01-21T18:42:23 - INFO - Select file
+2026-01-21T18:42:25 - INFO - Drag file to dropzone
+2026-01-21T18:42:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:42:42 - ERROR - WebElement[Dropzone file name]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b04c88d5
+	0x7ff6b04c8930
+	0x7ff6b02a165d
+	0x7ff6b02f9a33
+	0x7ff6b02f9d3c
+	0x7ff6b034df67
+	0x7ff6b034ac97
+	0x7ff6b02eac29
+	0x7ff6b02eba93
+	0x7ff6b07e0620
+	0x7ff6b07daf60
+	0x7ff6b07f96c6
+	0x7ff6b04e5dd4
+	0x7ff6b04eed7c
+	0x7ff6b04d1ff4
+	0x7ff6b04d21a5
+	0x7ff6b04b7ed2
+	0x7ffa11397344
+	0x7ffa130a26b1
+
+2026-01-21T18:42:51 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:42:52 - INFO - Browser[7cc4e7220a2f4619131dbce1e7d154a5]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:42:54 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:42:54 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:42:54 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:42:54 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:42:54 - INFO - Browser[7cc4e7220a2f4619131dbce1e7d154a5]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="7cc4e7220a2f4619131dbce1e7d154a5", element="f.AD6D222F7196769227B9CCF1600365F8.d.C28E5A513CAD7C0D61C076E408FFAA32.e.5")>,)"
+2026-01-21T18:42:54 - INFO - Open Explorer
+2026-01-21T18:42:56 - INFO - Select file
+2026-01-21T18:42:58 - INFO - Drag file to dropzone
+2026-01-21T18:43:05 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:43:15 - ERROR - WebElement[Dropzone file name]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b04c88d5
+	0x7ff6b04c8930
+	0x7ff6b02a165d
+	0x7ff6b02f9a33
+	0x7ff6b02f9d3c
+	0x7ff6b034df67
+	0x7ff6b034ac97
+	0x7ff6b02eac29
+	0x7ff6b02eba93
+	0x7ff6b07e0620
+	0x7ff6b07daf60
+	0x7ff6b07f96c6
+	0x7ff6b04e5dd4
+	0x7ff6b04eed7c
+	0x7ff6b04d1ff4
+	0x7ff6b04d21a5
+	0x7ff6b04b7ed2
+	0x7ffa11397344
+	0x7ffa130a26b1
+
+2026-01-21T18:43:41 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:43:42 - INFO - Browser[2c8f29ba5be3df4d1ee7b81b71179dae]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:43:44 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:43:44 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:43:44 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:43:44 - INFO - Browser[2c8f29ba5be3df4d1ee7b81b71179dae]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="2c8f29ba5be3df4d1ee7b81b71179dae", element="f.8FECDE4C50DDD7C2C1D4548A91BBB1E3.d.A3E61915BE3EAA464EF647E774F2B096.e.5")>,)"
+2026-01-21T18:43:44 - INFO - Open Explorer
+2026-01-21T18:43:46 - INFO - Select file
+2026-01-21T18:43:48 - INFO - Drag file to dropzone
+2026-01-21T18:43:54 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:44:05 - ERROR - WebElement[Dropzone file name]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b04c88d5
+	0x7ff6b04c8930
+	0x7ff6b02a165d
+	0x7ff6b02f9a33
+	0x7ff6b02f9d3c
+	0x7ff6b034df67
+	0x7ff6b034ac97
+	0x7ff6b02eac29
+	0x7ff6b02eba93
+	0x7ff6b07e0620
+	0x7ff6b07daf60
+	0x7ff6b07f96c6
+	0x7ff6b04e5dd4
+	0x7ff6b04eed7c
+	0x7ff6b04d1ff4
+	0x7ff6b04d21a5
+	0x7ff6b04b7ed2
+	0x7ffa11397344
+	0x7ffa130a26b1
+
+2026-01-21T18:45:10 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:45:11 - INFO - Browser[d09e10128a679a8697c9dee0d93a3d96]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:45:13 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:45:13 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:45:13 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:45:13 - INFO - Browser[d09e10128a679a8697c9dee0d93a3d96]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="d09e10128a679a8697c9dee0d93a3d96", element="f.F137D17E3CD55927E4CD0E543B9F9383.d.013024550973EA521A67B53D84640F25.e.5")>,)"
+2026-01-21T18:45:13 - INFO - Open Explorer
+2026-01-21T18:45:15 - INFO - Select file
+2026-01-21T18:45:17 - INFO - Drag file to dropzone
+2026-01-21T18:45:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:45:34 - ERROR - WebElement[Dropzone file name]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b04c88d5
+	0x7ff6b04c8930
+	0x7ff6b02a165d
+	0x7ff6b02f9a33
+	0x7ff6b02f9d3c
+	0x7ff6b034df67
+	0x7ff6b034ac97
+	0x7ff6b02eac29
+	0x7ff6b02eba93
+	0x7ff6b07e0620
+	0x7ff6b07daf60
+	0x7ff6b07f96c6
+	0x7ff6b04e5dd4
+	0x7ff6b04eed7c
+	0x7ff6b04d1ff4
+	0x7ff6b04d21a5
+	0x7ff6b04b7ed2
+	0x7ffa11397344
+	0x7ffa130a26b1
+
+2026-01-21T18:45:43 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:45:44 - INFO - Browser[c717f758e271de2dab239e7f43e16f54]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:45:46 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:45:46 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:45:46 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:45:46 - INFO - Browser[c717f758e271de2dab239e7f43e16f54]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="c717f758e271de2dab239e7f43e16f54", element="f.7C7B0E6FAB490960CD9CEF2F6228CCC5.d.2A48B4843D0A0504AB88BC3DA27D1DEF.e.5")>,)"
+2026-01-21T18:45:46 - INFO - Open Explorer
+2026-01-21T18:45:48 - INFO - Select file
+2026-01-21T18:45:50 - INFO - Drag file to dropzone
+2026-01-21T18:45:57 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:45:57 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//div[contains(@class,'dz-success-mark')]//span[normalize-space()='✔']")
+2026-01-21T18:45:57 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:45:57 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//div[contains(@class,'dz-success-mark')]//span[normalize-space()='✔']")
+2026-01-21T18:46:10 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--window-position=0,0']'
+2026-01-21T18:46:11 - INFO - Browser[78685264c395040bbc576cb9819e2200]: get "http://the-internet.herokuapp.com/upload"
+2026-01-21T18:46:13 - INFO - UploadImagePage[UploadImagePage]: wait for open
+2026-01-21T18:46:13 - INFO - Waits[10]: wait for presence ('id', 'file-upload')
+2026-01-21T18:46:13 - INFO - Waits[10]: wait for presence ('id', 'drag-drop-upload')
+2026-01-21T18:46:13 - INFO - Browser[78685264c395040bbc576cb9819e2200]: execute script = "
+        const el = arguments[0];
+
+        const r = el.getBoundingClientRect();
+        const chromeY = window.outerHeight - window.innerHeight;
+
+        const x = Math.round(r.left + r.width / 2);
+        const y = Math.round(chromeY + r.top + r.height / 2);
+
+        return { x: x, y: y };
+        " with args = "(<selenium.webdriver.remote.webelement.WebElement (session="78685264c395040bbc576cb9819e2200", element="f.ACF8D8CD00C8BE789755B6FAC6AD7CCC.d.F874E3AD0F5762F26DA0E296DD101880.e.5")>,)"
+2026-01-21T18:46:13 - INFO - Open Explorer
+2026-01-21T18:46:15 - INFO - Select file
+2026-01-21T18:46:17 - INFO - Drag file to dropzone
+2026-01-21T18:46:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='drag-drop-upload']//div[contains(@class,'dz-preview') and not(ancestor::div[@id='preview-template'])]//span[@data-dz-name]")
+2026-01-21T18:46:34 - ERROR - WebElement[Dropzone file name]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b04c88d5
+	0x7ff6b04c8930
+	0x7ff6b02a165d
+	0x7ff6b02f9a33
+	0x7ff6b02f9d3c
+	0x7ff6b034df67
+	0x7ff6b034ac97
+	0x7ff6b02eac29
+	0x7ff6b02eba93
+	0x7ff6b07e0620
+	0x7ff6b07daf60
+	0x7ff6b07f96c6
+	0x7ff6b04e5dd4
+	0x7ff6b04eed7c
+	0x7ff6b04d1ff4
+	0x7ff6b04d21a5
+	0x7ff6b04b7ed2
+	0x7ffa11397344
+	0x7ffa130a26b1
+

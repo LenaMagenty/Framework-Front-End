@@ -1,0 +1,1443 @@
+2026-01-19T14:27:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-01-19T14:27:06 - INFO - Browser[af5f9b1a31a390d398d11fc8686ec564]: switch to frame
+2026-01-19T14:27:06 - INFO - Waits[10]: wait for presence ('id', 'frame1')
+2026-01-19T14:27:07 - INFO - Waits[10]: wait for presence ('id', 'sampleHeading')
+2026-01-19T14:27:07 - INFO - Browser[af5f9b1a31a390d398d11fc8686ec564]: switch to default content
+2026-01-19T14:27:07 - INFO - Browser[af5f9b1a31a390d398d11fc8686ec564]: switch to frame
+2026-01-19T14:27:07 - INFO - Waits[10]: wait for presence ('id', 'frame2')
+2026-01-19T14:27:07 - INFO - Waits[10]: wait for presence ('id', 'sampleHeading')
+2026-01-19T14:27:07 - INFO - Browser[af5f9b1a31a390d398d11fc8686ec564]: switch to default content
+2026-01-19T14:28:52 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080']'
+2026-01-19T14:28:54 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: get "https://demoqa.com/frames"
+2026-01-19T14:28:56 - INFO - FramesPage[FramesPage]: wait for open
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-01-19T14:28:56 - INFO - FramesPage[FramesPage]: ensure Alerts, Frame & Windows group opened
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for visible ('xpath', "//div[contains(@class,'element-group')][.//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']]//ul[contains(@class,'menu-list')]")
+2026-01-19T14:28:56 - INFO - FramesPage[FramesPage]: menu already opened
+2026-01-19T14:28:56 - INFO - FramesPage[FramesPage]: open Nested Frames from menu
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for clickable ('xpath', "//span[normalize-space()='Nested Frames']")
+2026-01-19T14:28:56 - INFO - NestedFramesPage[NestedFramesPage]: wait for open
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='framesWrapper']//h1[normalize-space()='Nested Frames']")
+2026-01-19T14:28:56 - INFO - NestedFramesPage[NestedFramesPage]: check Parent frame text is visible
+2026-01-19T14:28:56 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to frame
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('id', 'frame1')
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for visible ('xpath', "//body[contains(normalize-space(.), 'Parent frame')]")
+2026-01-19T14:28:56 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to default content
+2026-01-19T14:28:56 - INFO - NestedFramesPage[NestedFramesPage]: check Child Iframe text is visible
+2026-01-19T14:28:56 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to frame
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('id', 'frame1')
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('xpath', "//iframe[@srcdoc='<p>Child Iframe</p>']")
+2026-01-19T14:28:56 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to iframe
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for visible ('xpath', "//p[normalize-space()='Child Iframe']")
+2026-01-19T14:28:56 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to default content
+2026-01-19T14:28:56 - INFO - FramesPage[FramesPage]: open Frames from menu
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for clickable ('xpath', "//span[normalize-space()='Frames']")
+2026-01-19T14:28:56 - INFO - FramesPage[FramesPage]: wait for open
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-01-19T14:28:56 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to frame
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('id', 'frame1')
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('id', 'sampleHeading')
+2026-01-19T14:28:56 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to default content
+2026-01-19T14:28:56 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to frame
+2026-01-19T14:28:56 - INFO - Waits[10]: wait for presence ('id', 'frame2')
+2026-01-19T14:28:57 - INFO - Waits[10]: wait for presence ('id', 'sampleHeading')
+2026-01-19T14:28:57 - INFO - Browser[6e431f4440952f908e349174f07ae65a]: switch to default content
+2026-01-19T14:28:57 - INFO - top frame text = "This is a sample page"
+2026-01-19T14:28:57 - INFO - bottom frame text = "This is a sample page"
+2026-01-19T15:33:27 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080']'
+2026-01-19T15:33:29 - INFO - Browser[79c5a622c97eb242a60da48f216e5974]: get "https://the-internet.herokuapp.com/javascript_alerts"
+2026-01-19T15:33:45 - INFO - AlertsPage[AlertsPage]: wait for open
+2026-01-19T15:33:45 - INFO - Waits[10]: wait for presence ('xpath', "//button[@onclick='jsAlert()']")
+2026-01-19T15:33:45 - INFO - Browser[79c5a622c97eb242a60da48f216e5974]: execute script = "jsAlert();" with args = "()"
+2026-01-19T15:33:45 - INFO - Alerts: wait alert present
+2026-01-19T15:33:45 - INFO - Alerts: switch to alert
+2026-01-19T15:33:45 - INFO - Alerts: wait alert present
+2026-01-19T15:33:45 - INFO - Alerts: switch to alert
+2026-01-19T15:33:45 - INFO - Waits[10]: wait for presence ('id', 'result')
+2026-01-19T15:33:45 - INFO - BaseElement[Result]: get text
+2026-01-19T15:33:45 - INFO - BaseElement[Result]: text = "You successfully clicked an alert"
+2026-01-19T15:33:45 - INFO - Browser[79c5a622c97eb242a60da48f216e5974]: execute script = "jsConfirm();" with args = "()"
+2026-01-19T15:33:45 - INFO - Alerts: wait alert present
+2026-01-19T15:33:45 - INFO - Alerts: switch to alert
+2026-01-19T15:33:45 - INFO - Alerts: wait alert present
+2026-01-19T15:33:45 - INFO - Alerts: switch to alert
+2026-01-19T15:33:45 - INFO - Waits[10]: wait for presence ('id', 'result')
+2026-01-19T15:33:45 - INFO - BaseElement[Result]: get text
+2026-01-19T15:33:45 - INFO - BaseElement[Result]: text = "You clicked: Ok"
+2026-01-19T15:33:45 - INFO - Browser[79c5a622c97eb242a60da48f216e5974]: execute script = "jsPrompt();" with args = "()"
+2026-01-19T15:33:45 - INFO - Alerts: wait alert present
+2026-01-19T15:33:45 - INFO - Alerts: switch to alert
+2026-01-19T15:33:45 - INFO - Alerts: wait alert present
+2026-01-19T15:33:45 - INFO - Alerts: switch to alert
+2026-01-19T15:33:45 - INFO - Waits[10]: wait for presence ('id', 'result')
+2026-01-19T15:33:46 - INFO - BaseElement[Result]: get text
+2026-01-19T15:33:46 - INFO - BaseElement[Result]: text = "You entered: rkQTeJ"
+2026-01-19T15:33:48 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080']'
+2026-01-19T15:33:49 - INFO - Browser[2a7dac5a86e66abf07a980d84fc01836]: get "https://the-internet.herokuapp.com/javascript_alerts"
+2026-01-19T15:33:51 - INFO - AlertsPage[AlertsPage]: wait for open
+2026-01-19T15:33:51 - INFO - Waits[10]: wait for presence ('xpath', "//button[@onclick='jsAlert()']")
+2026-01-19T15:33:51 - INFO - Waits[10]: wait for clickable ('xpath', "//button[@onclick='jsAlert()']")
+2026-01-19T15:33:51 - INFO - BaseElement[Click for JS Alert]: click
+2026-01-19T15:33:51 - INFO - Alerts: wait alert present
+2026-01-19T15:33:51 - INFO - Alerts: switch to alert
+2026-01-19T15:33:51 - INFO - Alerts: wait alert present
+2026-01-19T15:33:51 - INFO - Alerts: switch to alert
+2026-01-19T15:33:51 - INFO - Waits[10]: wait for presence ('id', 'result')
+2026-01-19T15:33:51 - INFO - BaseElement[Result]: get text
+2026-01-19T15:33:51 - INFO - BaseElement[Result]: text = "You successfully clicked an alert"
+2026-01-19T15:33:51 - INFO - Waits[10]: wait for clickable ('xpath', "//button[@onclick='jsConfirm()']")
+2026-01-19T15:33:51 - INFO - BaseElement[Click for JS Confirm]: click
+2026-01-19T15:33:51 - INFO - Alerts: wait alert present
+2026-01-19T15:33:51 - INFO - Alerts: switch to alert
+2026-01-19T15:33:51 - INFO - Alerts: wait alert present
+2026-01-19T15:33:51 - INFO - Alerts: switch to alert
+2026-01-19T15:33:51 - INFO - Waits[10]: wait for presence ('id', 'result')
+2026-01-19T15:33:51 - INFO - BaseElement[Result]: get text
+2026-01-19T15:33:51 - INFO - BaseElement[Result]: text = "You clicked: Ok"
+2026-01-19T15:33:51 - INFO - Waits[10]: wait for clickable ('xpath', "//button[@onclick='jsPrompt()']")
+2026-01-19T15:33:51 - INFO - BaseElement[Click for JS Prompt]: click
+2026-01-19T15:33:51 - INFO - Alerts: wait alert present
+2026-01-19T15:33:51 - INFO - Alerts: switch to alert
+2026-01-19T15:33:51 - INFO - Alerts: wait alert present
+2026-01-19T15:33:51 - INFO - Alerts: switch to alert
+2026-01-19T15:33:51 - INFO - Waits[10]: wait for presence ('id', 'result')
+2026-01-19T15:33:51 - INFO - BaseElement[Result]: get text
+2026-01-19T15:33:51 - INFO - BaseElement[Result]: text = "You entered: eQWXNvrdLM"
+2026-01-19T15:33:53 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080']'
+2026-01-19T15:33:54 - INFO - Browser[8b9d40cd75fbb48d59e188dbcef68065]: get "https://the-internet.herokuapp.com/context_menu"
+2026-01-19T15:33:56 - INFO - AlertsContextCLickPage[AlertsContextCLickPage]: wait for open
+2026-01-19T15:33:56 - INFO - Waits[10]: wait for presence ('id', 'hot-spot')
+2026-01-19T15:33:56 - INFO - Waits[10]: wait for presence ('id', 'hot-spot')
+2026-01-19T15:33:56 - INFO - Browser[8b9d40cd75fbb48d59e188dbcef68065]: context click
+2026-01-19T15:33:57 - INFO - Alerts: wait alert present
+2026-01-19T15:33:57 - INFO - Alerts: switch to alert
+2026-01-19T15:33:57 - INFO - Alerts: wait alert present
+2026-01-19T15:33:57 - INFO - Alerts: switch to alert
+2026-01-19T15:34:03 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080']'
+2026-01-19T15:34:04 - INFO - Browser[a738cf103aedf311d22fceb12b3d6a7e]: get "http://the-internet.herokuapp.com/dynamic_content"
+2026-01-19T15:34:07 - INFO - DynamicContentPage[DynamicContentPage]: wait for open
+2026-01-19T15:34:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[@class='example']//h3[normalize-space()='Dynamic Content']")
+2026-01-19T15:34:07 - INFO - DynamicContentPage[DynamicContentPage]: refresh until any two images match
+2026-01-19T15:34:07 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-01-19T15:34:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='content']//div[contains(@class,'large-2')]//img")
+2026-01-19T15:34:07 - INFO - DynamicContentPage[DynamicContentPage]: no duplicates yet (attempt=1), refresh
+2026-01-19T15:34:07 - INFO - Browser[a738cf103aedf311d22fceb12b3d6a7e]: refresh
+2026-01-19T15:34:07 - INFO - DynamicContentPage[DynamicContentPage]: wait for open
+2026-01-19T15:34:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[@class='example']//h3[normalize-space()='Dynamic Content']")
+2026-01-19T15:34:07 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-01-19T15:34:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='content']//div[contains(@class,'large-2')]//img")
+2026-01-19T15:34:07 - INFO - DynamicContentPage[DynamicContentPage]: duplicate images found (attempt=2)
+2026-01-19T15:34:07 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-01-19T15:34:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='content']//div[contains(@class,'large-2')]//img")
+2026-01-19T15:36:28 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080']'
+2026-01-19T15:36:29 - INFO - Browser[92d8c7818175c854f2aa37bfaf6e9143]: get "http://the-internet.herokuapp.com/dynamic_content"
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: wait for open
+2026-01-19T15:36:32 - INFO - Waits[10]: wait for presence ('xpath', "//div[@class='example']//h3[normalize-space()='Dynamic Content']")
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: refresh until any two images match
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-01-19T15:36:32 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='content']//div[contains(@class,'large-2')]//img")
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: no duplicates yet (attempt=1), refresh
+2026-01-19T15:36:32 - INFO - Browser[92d8c7818175c854f2aa37bfaf6e9143]: refresh
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: wait for open
+2026-01-19T15:36:32 - INFO - Waits[10]: wait for presence ('xpath', "//div[@class='example']//h3[normalize-space()='Dynamic Content']")
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-01-19T15:36:32 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='content']//div[contains(@class,'large-2')]//img")
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: no duplicates yet (attempt=2), refresh
+2026-01-19T15:36:32 - INFO - Browser[92d8c7818175c854f2aa37bfaf6e9143]: refresh
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: wait for open
+2026-01-19T15:36:32 - INFO - Waits[10]: wait for presence ('xpath', "//div[@class='example']//h3[normalize-space()='Dynamic Content']")
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-01-19T15:36:32 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='content']//div[contains(@class,'large-2')]//img")
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: duplicate images found (attempt=3)
+2026-01-19T15:36:32 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-01-19T15:36:32 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='content']//div[contains(@class,'large-2')]//img")
+2026-01-20T16:13:24 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080']'
+2026-01-20T16:13:26 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: get "http://the-internet.herokuapp.com/infinite_scroll"
+2026-01-20T16:13:28 - INFO - InfinityScrollPage[InfinityScrollPage]: wait for open
+2026-01-20T16:13:28 - INFO - Waits[10]: wait for presence ('xpath', "//div[@id='content']//h3[normalize-space()='Infinite Scroll']")
+2026-01-20T16:13:28 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll until paragraphs count == 36
+2026-01-20T16:13:28 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:13:28 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:28 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:28 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:39 - ERROR - WebElement[Paragraphs[3]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:13:39 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "2"
+2026-01-20T16:13:39 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:13:39 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:13:39 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:13:39 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:39 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:39 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:39 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:50 - ERROR - WebElement[Paragraphs[4]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:13:50 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "3"
+2026-01-20T16:13:50 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:13:50 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:13:50 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:13:50 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:50 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:50 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:50 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:13:50 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:01 - ERROR - WebElement[Paragraphs[5]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:14:01 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "4"
+2026-01-20T16:14:01 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:14:01 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:14:01 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:14:01 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:01 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:01 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:01 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:01 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:01 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:12 - ERROR - WebElement[Paragraphs[6]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:14:12 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "5"
+2026-01-20T16:14:12 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:14:12 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:14:12 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:14:12 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:12 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:12 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:12 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:12 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:12 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:12 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:23 - ERROR - WebElement[Paragraphs[7]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:14:23 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "6"
+2026-01-20T16:14:23 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:14:23 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:14:23 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:14:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:23 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - ERROR - WebElement[Paragraphs[8]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:14:34 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "7"
+2026-01-20T16:14:34 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:14:34 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:14:34 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:34 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - ERROR - WebElement[Paragraphs[9]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:14:45 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "8"
+2026-01-20T16:14:45 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:14:45 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:14:45 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - ERROR - WebElement[Paragraphs[10]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:14:56 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "9"
+2026-01-20T16:14:56 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:14:56 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:14:56 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:14:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - ERROR - WebElement[Paragraphs[11]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:15:07 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "10"
+2026-01-20T16:15:07 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:15:07 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:15:07 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:17 - ERROR - WebElement[Paragraphs[12]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:15:17 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "11"
+2026-01-20T16:15:17 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:15:17 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:15:17 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:15:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:18 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:28 - ERROR - WebElement[Paragraphs[13]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:15:28 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "12"
+2026-01-20T16:15:28 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:15:28 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:15:29 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:29 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - ERROR - WebElement[Paragraphs[14]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:15:40 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "13"
+2026-01-20T16:15:40 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:15:40 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:15:40 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:40 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - ERROR - WebElement[Paragraphs[15]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:15:51 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "14"
+2026-01-20T16:15:51 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:15:51 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:15:51 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:15:51 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - ERROR - WebElement[Paragraphs[16]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:16:02 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "15"
+2026-01-20T16:16:02 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:16:02 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:16:02 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:02 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - ERROR - WebElement[Paragraphs[17]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:16:13 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "16"
+2026-01-20T16:16:13 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:16:13 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:16:13 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:13 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - ERROR - WebElement[Paragraphs[18]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:16:24 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "17"
+2026-01-20T16:16:24 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:16:24 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:16:24 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:24 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - ERROR - WebElement[Paragraphs[19]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:16:35 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "18"
+2026-01-20T16:16:35 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:16:35 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:16:35 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:35 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - ERROR - WebElement[Paragraphs[20]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:16:45 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "19"
+2026-01-20T16:16:45 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:16:45 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:16:45 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:45 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:46 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - ERROR - WebElement[Paragraphs[21]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:16:56 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "20"
+2026-01-20T16:16:56 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:16:56 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:16:56 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:16:56 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - ERROR - WebElement[Paragraphs[22]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:17:06 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "21"
+2026-01-20T16:17:06 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:17:06 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:17:06 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:06 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:07 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - ERROR - WebElement[Paragraphs[23]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:17:17 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "22"
+2026-01-20T16:17:17 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:17:17 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:17:17 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:17 - INFO - Waits[10]: wait for presence ('xpath', "//div[24][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - ERROR - WebElement[Paragraphs[24]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:17:27 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "23"
+2026-01-20T16:17:27 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:17:27 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:17:27 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[24][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:27 - INFO - Waits[10]: wait for presence ('xpath', "//div[25][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - ERROR - WebElement[Paragraphs[25]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:17:38 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "24"
+2026-01-20T16:17:38 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:17:38 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:17:38 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[24][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[25][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:38 - INFO - Waits[10]: wait for presence ('xpath', "//div[26][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - ERROR - WebElement[Paragraphs[26]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:17:48 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "25"
+2026-01-20T16:17:48 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:17:48 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:17:48 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[24][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[25][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[26][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:48 - INFO - Waits[10]: wait for presence ('xpath', "//div[27][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:58 - ERROR - WebElement[Paragraphs[27]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:17:58 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "26"
+2026-01-20T16:17:58 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:17:58 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:17:58 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:17:58 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[24][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[25][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[26][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[27][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:17:59 - INFO - Waits[10]: wait for presence ('xpath', "//div[28][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - ERROR - WebElement[Paragraphs[28]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:18:09 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "27"
+2026-01-20T16:18:09 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:18:09 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:18:09 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[24][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[25][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[26][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[27][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[28][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:09 - INFO - Waits[10]: wait for presence ('xpath', "//div[29][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - ERROR - WebElement[Paragraphs[29]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:18:20 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "28"
+2026-01-20T16:18:20 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:18:20 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:18:20 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[24][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[25][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[26][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[27][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[28][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[29][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:20 - INFO - Waits[10]: wait for presence ('xpath', "//div[30][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - ERROR - WebElement[Paragraphs[30]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:18:31 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "29"
+2026-01-20T16:18:31 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:18:31 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:18:31 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[9][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[10][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[11][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[12][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[13][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[14][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[15][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[16][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[17][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[18][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[19][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[20][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[21][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[22][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[23][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[24][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[25][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[26][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[27][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[28][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[29][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[30][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:31 - INFO - Waits[10]: wait for presence ('xpath', "//div[31][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:41 - ERROR - WebElement[Paragraphs[31]]: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7019988d5
+	0x7ff701998930
+	0x7ff70177165d
+	0x7ff7017c9a33
+	0x7ff7017c9d3c
+	0x7ff70181df67
+	0x7ff70181ac97
+	0x7ff7017bac29
+	0x7ff7017bba93
+	0x7ff701cb0620
+	0x7ff701caaf60
+	0x7ff701cc96c6
+	0x7ff7019b5dd4
+	0x7ff7019bed7c
+	0x7ff7019a1ff4
+	0x7ff7019a21a5
+	0x7ff701987ed2
+	0x7ffd83d07344
+	0x7ffd846e26b1
+
+2026-01-20T16:18:41 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = "30"
+2026-01-20T16:18:41 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll to bottom
+2026-01-20T16:18:41 - INFO - Browser[396afa80ae519db596bb7eaa89d9298b]: execute script = "window.scrollTo(0, document.body.scrollHeight);" with args = "()"
+2026-01-20T16:18:41 - INFO - InfinityScrollPage[InfinityScrollPage]: get paragraphs count
+2026-01-20T16:18:41 - INFO - Waits[10]: wait for presence ('xpath', "//div[1][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:41 - INFO - Waits[10]: wait for presence ('xpath', "//div[2][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:41 - INFO - Waits[10]: wait for presence ('xpath', "//div[3][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:41 - INFO - Waits[10]: wait for presence ('xpath', "//div[4][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:41 - INFO - Waits[10]: wait for presence ('xpath', "//div[5][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:41 - INFO - Waits[10]: wait for presence ('xpath', "//div[6][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:41 - INFO - Waits[10]: wait for presence ('xpath', "//div[7][contains(@class,'jscroll-added')]//br")
+2026-01-20T16:18:41 - INFO - Waits[10]: wait for presence ('xpath', "//div[8][contains(@class,'jscroll-added')]//br")

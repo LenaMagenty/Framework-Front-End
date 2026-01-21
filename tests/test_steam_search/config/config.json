@@ -1,7 +1,0 @@
-{
-  "url": "https://store.steampowered.com/",
-  "timeout": 15,
-  "chrome_options": [
-    "--incognito",
-    "--window-size=1920,1080"]
-}

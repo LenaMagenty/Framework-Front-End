@@ -1,0 +1,106 @@
+from selenium.common import TimeoutException, WebDriverException
+from selenium.webdriver.common.by import By
+
+from browser.browser import Browser
+from logger.logger import Logger
+
+
+class BaseElement:
+    def __init__(
+            self,
+            browser: Browser,
+            locator: str | tuple,
+            description: str = None
+    ):
+        self.browser = browser
+
+        if isinstance(locator, str):
+            if '/' in locator:
+                self.locator = (By.XPATH, locator)
+            else:
+                self.locator = (By.ID, locator)
+        else:
+            self.locator = locator
+
+        self.description = description if description else str(locator)
+        self.waits = self.browser.waits
+
+    def __str__(self) -> str:
+        return f'{self.__class__.__name__}[{self.description}]'
+
+    def __repr__(self) -> str:
+        return str(self)
+
+    def wait_for_presence(self):
+        try:
+            return self.waits.wait_for_presence(self.locator)
+        except TimeoutException as err:
+            Logger.error(f'{self}: {err}')
+            raise
+
+    def wait_for_clickable(self):
+        try:
+            return self.waits.wait_for_clickable(self.locator)
+        except TimeoutException as err:
+            Logger.error(f'{self}: {err}')
+            raise
+
+    def wait_for_visible(self):
+        try:
+            return self.waits.wait_for_visible(self.locator)
+        except TimeoutException as err:
+            Logger.error(f'{self}: {err}')
+            raise
+
+    def is_exists(self) -> bool:
+        try:
+            self.wait_for_presence()
+            return True
+        except TimeoutException:
+            return False
+
+    def is_visible(self) -> bool:
+        try:
+            self.wait_for_visible()
+            return True
+        except TimeoutException:
+            return False
+
+    def click(self) -> None:
+        element = self.wait_for_clickable()
+        Logger.info(f'{self}: click')
+        try:
+            element.click()
+        except WebDriverException as err:
+            Logger.error(f'{self}: {err}')
+            raise
+
+    def js_click(self) -> None:
+        element = self.wait_for_presence()
+        Logger.info(f'{self}: js click')
+        self.browser.execute_script(
+            'arguments[0].click();',
+            element
+        )
+
+    def get_text(self) -> str:
+        element = self.wait_for_presence()
+        Logger.info(f'{self}: get text')
+        try:
+            text = element.text
+        except WebDriverException as err:
+            Logger.error(f'{self}: {err}')
+            raise
+        Logger.info(f'{self}: text = "{text}"')
+        return text
+
+    def get_attribute(self, name: str) -> str:
+        element = self.wait_for_presence()
+        Logger.info(f'{self}: get attribute "{name}"')
+        try:
+            value = element.get_attribute(name)
+        except WebDriverException as err:
+            Logger.error(f'{self}: {err}')
+            raise
+        Logger.info(f'{self}: attribute {name} = "{value}"')
+        return value

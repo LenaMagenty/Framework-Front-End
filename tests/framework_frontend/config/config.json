@@ -1,0 +1,25 @@
+{
+  "basic_auth_url": "http://the-internet.herokuapp.com/basic_auth",
+  "alerts_url": "https://the-internet.herokuapp.com/javascript_alerts",
+  "context_click_url": "https://the-internet.herokuapp.com/context_menu",
+  "horizontal_slider_url": "https://the-internet.herokuapp.com/horizontal_slider",
+  "hovers_url": "http://the-internet.herokuapp.com/hovers",
+  "windows_handlers_url": "https://the-internet.herokuapp.com/windows",
+  "frames_url": "https://demoqa.com/frames",
+  "dynamic_content_url": "http://the-internet.herokuapp.com/dynamic_content",
+  "infinity_scroll_url": "http://the-internet.herokuapp.com/infinite_scroll",
+  "upload_image_url": "http://the-internet.herokuapp.com/upload",
+  "auth": {
+    "username": "admin",
+    "password": "admin"
+  },
+  "chrome_options": [
+  "--window-size=1920,1080",
+    "--window-position=0,0"
+],
+  "timeouts": {
+    "default": 10,
+    "page_load": 120
+  }
+}
+
