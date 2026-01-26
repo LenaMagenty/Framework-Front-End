@@ -12,10 +12,12 @@ def test_upload_image_via_dialog_window(browser):
     page = UploadImagePage(browser)
     page.wait_for_open()
 
-    file_name = 'New Image.jpeg'
-    file_path = (Path(__file__).parent / file_name).resolve()
+    file_path = Path('tests/framework_frontend/test/New Image.jpeg').resolve()
 
     page.open_file_dialog()
+    print('PRINT:', str(file_path))
+    print('REPR :', repr(str(file_path)))
+    print('EXISTS:', file_path.exists())
     PyAutoGUIUtilities.upload_file(str(file_path))
 
     page.wait_file_in_dropzone()

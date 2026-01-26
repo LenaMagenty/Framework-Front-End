@@ -18,8 +18,8 @@ def test_frames_nested_frames(browser):
     nested_frames_page = NestedFramesPage(browser)
     nested_frames_page.wait_for_open()
 
-    nested_frames_page.parent_text_is_visible()
-    nested_frames_page.child_text_is_visible()
+    nested_frames_page.check_parent_text_visible()
+    nested_frames_page.check_child_text_visible()
 
     frames_page.open_frames()
     frames_page.wait_for_open()

@@ -104,3 +104,24 @@ class BaseElement:
             raise
         Logger.info(f'{self}: attribute {name} = "{value}"')
         return value
+
+    def move_to_element(self) -> None:
+        Logger.info(f"{self}: move to")
+        self.browser.actions.move_to_element(self)
+
+    def context_click(self) -> None:
+        Logger.info(f"{self}: context click")
+        self.browser.actions.context_click(self)
+
+    def click_and_hold(self) -> None:
+        Logger.info(f"{self}: click and hold")
+        self.browser.actions.click_and_hold(self)
+
+    def send_keys_slider(self, keys: str) -> None:
+        element = self.wait_for_visible()
+        Logger.info(f"{self}: send keys for slider (len={len(keys)})")
+        try:
+            element.send_keys(keys)
+        except WebDriverException as err:
+            Logger.error(f"{self}: {err}")
+            raise

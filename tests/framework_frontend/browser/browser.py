@@ -33,13 +33,14 @@ class Browser:
             )
 
         self._driver.set_page_load_timeout(timeouts['page_load'])
+        self.default_timeout = default_timeout
 
         self.main_handle = None
 
-        self.waits = Waits(driver=self._driver, timeout=default_timeout)
-        self.alerts = Alerts(driver=self._driver, timeout=default_timeout)
-        self.actions = ActionChains(driver=self._driver)
-        self.windows = Windows(driver=self._driver, timeout=default_timeout)
+        self.waits = Waits(self)
+        self.alerts = Alerts(self)
+        self.actions = ActionChains(self)
+        self.windows = Windows(self)
 
     @property
     def driver(self) -> WebDriver:
@@ -143,22 +144,6 @@ class Browser:
         Logger.info(f'{self}: drag and drop')
         self.actions.drag_and_drop(source, target)
 
-    def drag_by_offset(self, element, x_offset: int, y_offset: int = 0) -> None:
-        Logger.info(f'{self}: drag by offset')
-        self.actions.drag_by_offset(element, x_offset, y_offset)
-
-    def context_click(self, element) -> None:
-        Logger.info(f'{self}: context click')
-        self.actions.context_click(element)
-
-    def click_and_hold(self, element) -> None:
-        Logger.info(f'{self}: click and hold')
-        self.actions.click_and_hold(element)
-
-    def move_to_element(self, element) -> None:
-        Logger.info(f'{self}: move to element {element}')
-        self.actions.move_to_element(element)
-
     def get_current_window_handle(self) -> str:
         Logger.info(f'{self}: get current window handle')
         return self.windows.get_current_handle()
@@ -178,6 +163,9 @@ class Browser:
     def close_current_window(self) -> None:
         Logger.info(f'{self}: close current window')
         self.windows.close_current()
+
+    def get_title(self) -> str:
+        return self.driver.title
 
     def __str__(self) -> str:
         return f'{self.__class__.__name__}[{self._driver.session_id}]'

@@ -1,53 +1,70 @@
-from selenium.webdriver.common.by import By
-
 from pages.base_page import BasePage
-from elements.base_element import BaseElement
+from elements.web_element import WebElement
+from elements.multi_web_element import MultiWebElement
 from logger.logger import Logger
 
 
 class HoversPage(BasePage):
     PAGE_NAME = 'HoversPage'
 
-    UNIQUE_ELEMENT_LOC = (By.ID, 'content')
+    CONTENT_LOC = 'content'  # ID
     USER_CARD_XPATH = "//div[@id='content']//div[contains(@class,'figure')]"
-    USER_PAGE_UNIQUE_ELEMENT_LOC = (By.XPATH, "//*[contains(text(),'Not Found')")
+    USER_NAME_XPATH = "//div[@id='content']//div[contains(@class,'figure')]//h5"
+    USER_PROFILE_LINK_XPATH = "//div[@id='content']//div[contains(@class,'figure')]//a"
+
+    UNIQUE_ELEMENT_LOC = CONTENT_LOC
+
+    def __init__(self, browser):
+        super().__init__(browser)
+
+        self.content = WebElement(
+            browser=self.browser,
+            locator=self.CONTENT_LOC,
+            description='Hovers content'
+        )
+        self.unique_element = self.content
+
+        self.user_cards = MultiWebElement(
+            browser=self.browser,
+            formattable_xpath=f'({self.USER_CARD_XPATH})[{{}}]',
+            description='User card'
+        )
+
+        self.user_names = MultiWebElement(
+            browser=self.browser,
+            formattable_xpath=f'({self.USER_NAME_XPATH})[{{}}]',
+            description='User name'
+        )
+
+        self.user_profile_links = MultiWebElement(
+            browser=self.browser,
+            formattable_xpath=f'({self.USER_PROFILE_LINK_XPATH})[{{}}]',
+            description='User profile link'
+        )
 
     def get_users_count(self) -> int:
         Logger.info(f'{self}: get users count')
-        return len(
-            self.browser.driver.find_elements(By.XPATH, self.USER_CARD_XPATH)
-        )
-
-    def _user_card(self, index: int) -> BaseElement:
-        return BaseElement(
-            browser=self.browser,
-            locator=(By.XPATH, f'({self.USER_CARD_XPATH})[{index}]'),
-            description=f'{self.PAGE_NAME} user card #{index}'
-        )
-
-    def _user_name(self, index: int) -> BaseElement:
-        return BaseElement(
-            browser=self.browser,
-            locator=(By.XPATH, f'({self.USER_CARD_XPATH})[{index}]//h5'),
-            description=f'{self.PAGE_NAME} user name #{index}'
-        )
-
-    def _user_profile_link(self, index: int) -> BaseElement:
-        return BaseElement(
-            browser=self.browser,
-            locator=(By.XPATH, f'({self.USER_CARD_XPATH})[{index}]//a'),
-            description=f'{self.PAGE_NAME} user profile link #{index}'
-        )
+        count = 0
+        for _ in self.user_cards:
+            count += 1
+        return count
 
     def hover_user_by_index(self, index: int) -> None:
         Logger.info(f'{self}: hover user #{index}')
-        card = self._user_card(index).wait_for_presence()
-        self.browser.move_to_element(card)
+        WebElement(
+            browser=self.browser,
+            locator=self.user_cards.formattable_xpath.format(index),
+            description=f'User card #{index}'
+        ).move_to_element()
 
     def get_user_name_by_index(self, index: int) -> str:
         Logger.info(f'{self}: get user name #{index}')
         self.hover_user_by_index(index)
-        return self._user_name(index).wait_for_presence().text
+        return WebElement(
+            browser=self.browser,
+            locator=self.user_names.formattable_xpath.format(index),
+            description=f'User name #{index}'
+        ).get_text()
 
     def get_user_number_by_index(self, index: int) -> str:
         Logger.info(f'{self}: get user number #{index}')
@@ -58,4 +75,8 @@ class HoversPage(BasePage):
     def open_user_profile_by_index(self, index: int) -> None:
         Logger.info(f'{self}: open user profile #{index}')
         self.hover_user_by_index(index)
-        self._user_profile_link(index).wait_for_presence().click()
+        WebElement(
+            browser=self.browser,
+            locator=self.user_profile_links.formattable_xpath.format(index),
+            description=f'User profile link #{index}'
+        ).click()

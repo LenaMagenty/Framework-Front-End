@@ -1,4 +1,3 @@
-from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -6,10 +5,12 @@ from logger.logger import Logger
 
 
 class Waits:
-    def __init__(self, driver: WebDriver, timeout: int):
-        self._driver = driver
-        self._timeout = timeout
-        self._wait = WebDriverWait(self._driver, timeout=self._timeout)
+    def __init__(self, browser):
+        self._browser = browser
+        self._wait = WebDriverWait(
+            browser.driver,
+            browser.default_timeout
+        )
 
     def wait_for_presence(self, locator):
         Logger.info(f'{self}: wait for presence {locator}')
@@ -28,7 +29,7 @@ class Waits:
         return self._wait.until(EC.alert_is_present())
 
     def __str__(self) -> str:
-        return f'{self.__class__.__name__}[{self._timeout}]'
+        return f'{self.__class__.__name__}'
 
     def __repr__(self) -> str:
         return str(self)

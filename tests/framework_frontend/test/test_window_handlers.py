@@ -23,7 +23,7 @@ def test_window_handlers(browser):
 
     new_window = NewWindowPage(browser)
     new_window.wait_for_open()
-    assert new_window.get_title() == 'New Window'
+    assert browser.get_title() == 'New Window'
 
     browser.switch_to_window(main_handle)
     page.wait_for_open()
@@ -36,7 +36,7 @@ def test_window_handlers(browser):
 
     browser.switch_to_window(second_new_handle)
     new_window.wait_for_open()
-    assert new_window.get_title() == 'New Window'
+    assert browser.get_title() == 'New Window'
 
     browser.switch_to_window(main_handle)
     page.wait_for_open()

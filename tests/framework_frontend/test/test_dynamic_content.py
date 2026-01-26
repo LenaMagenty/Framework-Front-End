@@ -6,7 +6,7 @@ def test_dynamic_content(browser):
     config = ConfigReader()
     browser.get(config.get('dynamic_content_url'))
 
-    page = DynamicContentPage(browser=browser)
+    page = DynamicContentPage(browser)
     page.wait_for_open()
 
     page.refresh_until_any_two_images_match()

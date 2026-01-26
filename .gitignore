@@ -3,3 +3,6 @@ __pycache__/
 .pytest_cache/
 .venv/
 .idea/
+
+tests/framework_frontend/logger/logs/
+*.log

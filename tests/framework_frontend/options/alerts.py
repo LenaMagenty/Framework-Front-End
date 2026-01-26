@@ -1,4 +1,3 @@
-from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common import NoAlertPresentException
@@ -7,15 +6,18 @@ from logger.logger import Logger
 
 
 class Alerts:
-    def __init__(self, driver: WebDriver, timeout: int):
-        self._driver = driver
-        self._wait = WebDriverWait(driver, timeout)
+    def __init__(self, browser):
+        self._browser = browser
+        self._wait = WebDriverWait(
+            browser.driver,
+            browser.default_timeout
+        )
 
     def _alert(self):
         Logger.info(f'{self}: wait alert present')
         self._wait.until(EC.alert_is_present())
         Logger.info(f'{self}: switch to alert')
-        return self._driver.switch_to.alert
+        return self._browser.driver.switch_to.alert
 
     def cancel(self) -> None:
         self._alert().dismiss()
@@ -36,7 +38,7 @@ class Alerts:
 
     def is_present(self) -> bool:
         try:
-            _ = self._driver.switch_to.alert
+            self._browser.driver.switch_to.alert.text
             return True
         except NoAlertPresentException:
             return False
