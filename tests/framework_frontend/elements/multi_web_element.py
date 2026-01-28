@@ -11,28 +11,35 @@ class MultiWebElement:
             formattable_xpath: str,
             description: str = None,
     ) -> None:
-        self.index = 1
+        self._iter_index = 1
 
         self.browser = browser
         self.formattable_xpath = formattable_xpath
         self.description = description if description else self.formattable_xpath.format('i:')
 
     def __iter__(self) -> Self:
-        self.index = 1
+        self._iter_index = 1
         return self
 
     def __next__(self) -> WebElement:
-        current_element = WebElement(
-            self.browser,
-            self.formattable_xpath.format(self.index),
-            f'{self.description}[{self.index}]',
-        )
-
-        if not current_element.is_exists():
+        element = self[self._iter_index]
+        if not element.is_exists():
             raise StopIteration
 
-        self.index += 1
-        return current_element
+        self._iter_index += 1
+        return element
+
+    def __getitem__(self, index: int) -> WebElement:
+        if not isinstance(index, int):
+            raise TypeError(f'Index must be int, got {type(index).__name__}')
+        if index < 1:
+            raise ValueError(f'Index must be >= 1, got {index}')
+
+        return WebElement(
+            browser=self.browser,
+            locator=self.formattable_xpath.format(index),
+            description=f'{self.description} #{index}',
+        )
 
     def __str__(self) -> str:
         return f'{self.__class__.__name__}[{self.description}]'

@@ -16,13 +16,13 @@ class UploadImagePage(BasePage):
 
     DROP_ZONE_LOC = "drag-drop-upload"
     DROPZONE_FILE_NAME_LOC = (
-        "//div[@id='drag-drop-upload']"
+        "//*[@id='drag-drop-upload']"
         "//div[contains(@class,'dz-preview') "
         "and not(ancestor::div[@id='preview-template'])]"
         "//span[@data-dz-name]"
     )
     DROPZONE_SUCCESS_MARK_LOC = (
-        "//div[@id='drag-drop-upload']"
+        "//*[@id='drag-drop-upload']"
         "//div[contains(@class,'dz-preview') "
         "and not(ancestor::div[@id='preview-template'])]"
         "//div[contains(@class,'dz-success-mark')]"

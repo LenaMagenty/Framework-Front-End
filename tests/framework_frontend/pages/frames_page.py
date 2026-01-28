@@ -6,7 +6,7 @@ from logger.logger import Logger
 class FramesPage(BasePage):
     PAGE_NAME = 'FramesPage'
 
-    UNIQUE_ELEMENT_LOC = "//div[@id='framesWrapper']//h1[normalize-space()='Frames']"
+    UNIQUE_ELEMENT_LOC = "//*[@id='framesWrapper']//h1[normalize-space()='Frames']"
 
     ALERTS_FRAME_WINDOWS_GROUP_LOC = (
         "//div[contains(@class,'element-group')]"

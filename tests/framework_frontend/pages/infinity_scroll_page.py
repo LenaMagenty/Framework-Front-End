@@ -7,8 +7,8 @@ from logger.logger import Logger
 class InfinityScrollPage(BasePage):
     PAGE_NAME = 'InfinityScrollPage'
 
-    UNIQUE_ELEMENT_LOC = "//div[@id='content']//h3[normalize-space()='Infinite Scroll']"
-    PARAGRAPHS_LOC = "//div[@id='content']//div[contains(@class,'jscroll-added')]"
+    UNIQUE_ELEMENT_LOC = "//*[@id='content']//h3[normalize-space()='Infinite Scroll']"
+    PARAGRAPHS_LOC = "//*[@id='content']//div[contains(@class,'jscroll-added')]"
 
     def __init__(self, browser):
         super().__init__(browser=browser)
@@ -26,33 +26,25 @@ class InfinityScrollPage(BasePage):
             description='Paragraph'
         )
 
-    def scroll_to_bottom(self) -> None:
-        Logger.info(f'{self}: scroll to bottom')
-        self.browser.execute_script('window.scrollTo(0, document.body.scrollHeight)')
-
     def get_paragraphs_count(self) -> int:
-        Logger.info(f'{self}: get paragraphs count')
-
         count = 0
         for _ in self.paragraphs:
             count += 1
-
-        Logger.info(f'{self}: paragraphs count = "{count}"')
         return count
-
-    def wait_next_paragraph(self, expected_index: int) -> None:
-        Logger.info(f'{self}: wait paragraph #{expected_index}')
-        for index, _ in enumerate(self.paragraphs, start=1):
-            if index == expected_index:
-                return
 
     def scroll_until_paragraphs_count(self, target: int) -> None:
         Logger.info(f'{self}: scroll until paragraphs count == {target}')
 
-        for expected_index in range(1, target + 1):
-            self.wait_next_paragraph(expected_index)
+        current = self.get_paragraphs_count()
+        steps = 0
 
-            if expected_index < target:
-                self.scroll_to_bottom()
+        while current < target:
+            steps += 1
 
-        Logger.info(f'{self}: reached paragraphs count {target}')
+            next_index = current + 1
+
+            self.browser.execute_script('window.scrollTo(0, document.body.scrollHeight)')
+            self.paragraphs[next_index].wait_for_presence()
+
+            current = self.get_paragraphs_count()
+        self.paragraphs[target].wait_for_presence()

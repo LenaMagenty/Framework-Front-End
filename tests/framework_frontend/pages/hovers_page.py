@@ -7,10 +7,10 @@ from logger.logger import Logger
 class HoversPage(BasePage):
     PAGE_NAME = 'HoversPage'
 
-    CONTENT_LOC = 'content'  # ID
-    USER_CARD_XPATH = "//div[@id='content']//div[contains(@class,'figure')]"
-    USER_NAME_XPATH = "//div[@id='content']//div[contains(@class,'figure')]//h5"
-    USER_PROFILE_LINK_XPATH = "//div[@id='content']//div[contains(@class,'figure')]//a"
+    CONTENT_LOC = 'content'
+    USER_CARD_XPATH = "//*[@id='content']//div[contains(@class,'figure')]"
+    USER_NAME_XPATH = "//*[@id='content']//div[contains(@class,'figure')]//h5"
+    USER_PROFILE_LINK_XPATH = "//*[@id='content']//div[contains(@class,'figure')]//a"
 
     UNIQUE_ELEMENT_LOC = CONTENT_LOC
 
@@ -44,27 +44,16 @@ class HoversPage(BasePage):
 
     def get_users_count(self) -> int:
         Logger.info(f'{self}: get users count')
-        count = 0
-        for _ in self.user_cards:
-            count += 1
-        return count
+        return sum(1 for _ in self.user_cards)
 
     def hover_user_by_index(self, index: int) -> None:
         Logger.info(f'{self}: hover user #{index}')
-        WebElement(
-            browser=self.browser,
-            locator=self.user_cards.formattable_xpath.format(index),
-            description=f'User card #{index}'
-        ).move_to_element()
+        self.user_cards[index].move_to_element()
 
     def get_user_name_by_index(self, index: int) -> str:
         Logger.info(f'{self}: get user name #{index}')
         self.hover_user_by_index(index)
-        return WebElement(
-            browser=self.browser,
-            locator=self.user_names.formattable_xpath.format(index),
-            description=f'User name #{index}'
-        ).get_text()
+        return self.user_names[index].get_text()
 
     def get_user_number_by_index(self, index: int) -> str:
         Logger.info(f'{self}: get user number #{index}')
@@ -75,8 +64,4 @@ class HoversPage(BasePage):
     def open_user_profile_by_index(self, index: int) -> None:
         Logger.info(f'{self}: open user profile #{index}')
         self.hover_user_by_index(index)
-        WebElement(
-            browser=self.browser,
-            locator=self.user_profile_links.formattable_xpath.format(index),
-            description=f'User profile link #{index}'
-        ).click()
+        self.user_profile_links[index].click()

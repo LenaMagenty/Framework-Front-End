@@ -1,5 +1,3 @@
-from selenium.webdriver.common.by import By
-
 from pages.base_page import BasePage
 from elements.label import Label
 
@@ -20,4 +18,4 @@ class BasicAuthPage(BasePage):
         self.unique_element = self.success_message
 
     def get_success_message_text(self) -> str:
-        return self.success_message.wait_for_presence().text
+        return self.success_message.get_text()

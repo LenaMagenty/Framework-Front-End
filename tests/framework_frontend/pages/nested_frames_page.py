@@ -12,7 +12,7 @@ class NestedFramesPage(BasePage):
     CHILD_IFRAME_LOC = "//iframe[@srcdoc]"
     CHILD_TEXT_LOC = "//p[normalize-space()='Child Iframe']"
 
-    UNIQUE_ELEMENT_LOC = "//div[@id='framesWrapper']//h1[normalize-space()='Nested Frames']"
+    UNIQUE_ELEMENT_LOC = "//*[@id='framesWrapper']//h1[normalize-space()='Nested Frames']"
 
     def __init__(self, browser):
         super().__init__(browser)

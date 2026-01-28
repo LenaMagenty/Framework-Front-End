@@ -3,7 +3,7 @@ import random
 from selenium.webdriver.common.keys import Keys
 
 from pages.base_page import BasePage
-from elements.web_element import WebElement
+from elements.input import Input
 from elements.label import Label
 from logger.logger import Logger
 
@@ -18,7 +18,7 @@ class HorizontalSliderPage(BasePage):
     def __init__(self, browser):
         super().__init__(browser)
 
-        self.slider = WebElement(
+        self.slider = Input(
             browser=self.browser,
             locator=self.SLIDER_LOC,
             description='Horizontal slider'
@@ -30,6 +30,7 @@ class HorizontalSliderPage(BasePage):
         )
 
         self.unique_element = self.slider
+
 
     def set_slider_value_in_range(
             self,
@@ -53,9 +54,9 @@ class HorizontalSliderPage(BasePage):
         presses = int((target_value - current_value) / step)
 
         if presses > 0:
-            self.slider.send_keys_slider(Keys.ARROW_RIGHT * presses)
+            self.slider.send_keys(Keys.ARROW_RIGHT * presses, clear=False)
         elif presses < 0:
-            self.slider.send_keys_slider(Keys.ARROW_LEFT * abs(presses))
+            self.slider.send_keys(Keys.ARROW_LEFT * abs(presses), clear=False)
 
         Logger.info(
             f'Slider target = {target_value}, actual = {self.range_value.get_text()}'
