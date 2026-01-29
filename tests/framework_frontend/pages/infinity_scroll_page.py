@@ -3,6 +3,9 @@ from elements.web_element import WebElement
 from elements.multi_web_element import MultiWebElement
 from logger.logger import Logger
 
+from selenium.common import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+
 
 class InfinityScrollPage(BasePage):
     PAGE_NAME = 'InfinityScrollPage'
@@ -27,10 +30,28 @@ class InfinityScrollPage(BasePage):
         )
 
     def get_paragraphs_count(self) -> int:
-        count = 0
-        for _ in self.paragraphs:
-            count += 1
-        return count
+        index = 1
+
+        while True:
+            element = self.paragraphs[index]
+            if not self.browser.waits.is_present_quick(element.locator, timeout=0.3):
+                count = index - 1
+                Logger.info(f'{self}: paragraphs count = {count}')
+                return count
+            index += 1
+
+    def wait_until_paragraph_appears(self, index: int) -> None:
+        Logger.info(f'{self}: wait until paragraph #{index} appears')
+
+        wait = WebDriverWait(self.browser.driver, self.browser.default_timeout)
+
+        try:
+            wait.until(lambda _driver: self.browser.waits.is_present_quick(
+                self.paragraphs[index].locator,
+                timeout=0.3
+            ))
+        except TimeoutException:
+            raise TimeoutException(f'{self}: paragraph #{index} did not appear')
 
     def scroll_until_paragraphs_count(self, target: int) -> None:
         Logger.info(f'{self}: scroll until paragraphs count == {target}')
@@ -40,11 +61,17 @@ class InfinityScrollPage(BasePage):
 
         while current < target:
             steps += 1
-
             next_index = current + 1
 
-            self.browser.execute_script('window.scrollTo(0, document.body.scrollHeight)')
-            self.paragraphs[next_index].wait_for_presence()
+            Logger.info(f'{self}: scroll step {steps}, current={current}')
 
-            current = self.get_paragraphs_count()
+            if self.browser.waits.is_present_quick(self.paragraphs[next_index].locator, timeout=0.1):
+                current = next_index
+                continue
+
+            self.browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+
+            self.wait_until_paragraph_appears(next_index)
+            current = next_index
+
         self.paragraphs[target].wait_for_presence()

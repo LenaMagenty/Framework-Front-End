@@ -31,35 +31,23 @@ class HorizontalSliderPage(BasePage):
 
         self.unique_element = self.slider
 
-
-    def set_slider_value_in_range(
+    def set_slider_value(
             self,
-            min_value: Decimal,
-            max_value: Decimal,
+            target_value: Decimal,
             step: Decimal
-    ) -> Decimal:
+    ) -> None:
         Logger.info(
-            f'Set slider value in range: min={min_value}, max={max_value}, step={step}'
+            f'Set slider to value: target={target_value}, step={step}'
         )
-
-        steps_count = int((max_value - min_value) / step)
-        possible_values = [
-            min_value + step * i
-            for i in range(1, steps_count)
-        ]
-
-        target_value = random.choice(possible_values)
 
         current_value = Decimal(self.range_value.get_text())
         presses = int((target_value - current_value) / step)
 
         if presses > 0:
             self.slider.send_keys(Keys.ARROW_RIGHT * presses, clear=False)
-        elif presses < 0:
+        else:
             self.slider.send_keys(Keys.ARROW_LEFT * abs(presses), clear=False)
 
         Logger.info(
-            f'Slider target = {target_value}, actual = {self.range_value.get_text()}'
+            f'Slider actual value = {self.range_value.get_text()}'
         )
-
-        return target_value

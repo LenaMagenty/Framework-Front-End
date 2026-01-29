@@ -1,4 +1,5 @@
 from decimal import Decimal
+import random
 
 from pages.horizontal_slider_page import HorizontalSliderPage
 from config.config_reader import ConfigReader
@@ -16,13 +17,23 @@ def test_horizontal_slider(browser):
     max_value = Decimal('5')
     step = Decimal('0.5')
 
-    Logger.info('Set random value on horizontal slider')
-    expected = page.set_slider_value_in_range(
-        min_value=min_value,
-        max_value=max_value,
+    steps_count = int((max_value - min_value) / step)
+    possible_values = [
+        min_value + step * i
+        for i in range(1, steps_count)
+    ]
+
+    expected = random.choice(possible_values)
+
+    Logger.info(f'Set random value on horizontal slider: {expected}')
+
+    page.set_slider_value(
+        target_value=expected,
         step=step
     )
 
     actual = Decimal(page.range_value.get_text())
 
-    assert actual == expected, f'Ожидали "{expected}", но получили "{actual}"'
+    assert actual == expected, (
+        f'Ожидали "{expected}", но получили "{actual}"'
+    )

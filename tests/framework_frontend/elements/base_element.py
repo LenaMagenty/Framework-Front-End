@@ -40,8 +40,8 @@ class BaseElement:
     def wait_for_visible(self):
         return self.waits.wait_for_visible(self.locator)
 
-    def is_exists(self) -> bool:
-        return self.waits.is_present(self.locator)
+    def is_exists(self, timeout: float | None = None) -> bool:
+        return self.waits.is_present(self.locator, timeout=timeout)
 
     def is_visible(self) -> bool:
         return self.waits.is_visible(self.locator)

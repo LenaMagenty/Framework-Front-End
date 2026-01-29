@@ -8,7 +8,8 @@ class DynamicContentPage(BasePage):
     PAGE_NAME = 'DynamicContentPage'
 
     UNIQUE_ELEMENT_LOC = "//div[contains(@class,'example')]//h3[normalize-space()='Dynamic Content']"
-    IMAGES_LOC = "//*[@id='content']//div[contains(@class,'large-2')]//img"
+
+    IMAGES_LOC = "(//*[@id='content']//div[contains(@class,'large-2')]//img)[{}]"
 
     def __init__(self, browser):
         super().__init__(browser)
@@ -22,7 +23,7 @@ class DynamicContentPage(BasePage):
 
         self.images = MultiWebElement(
             browser=self.browser,
-            formattable_xpath=f'({self.IMAGES_LOC})[{{}}]',
+            formattable_xpath=self.IMAGES_LOC,
             description='Dynamic content image'
         )
 
