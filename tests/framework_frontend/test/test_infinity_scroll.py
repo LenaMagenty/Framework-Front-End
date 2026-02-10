@@ -1,8 +1,7 @@
 from pages.infinity_scroll_page import InfinityScrollPage
 from config.config_reader import ConfigReader
-import pytest
 
-@pytest.mark.slow
+
 def test_infinite_scroll(browser):
     target = 36
     config = ConfigReader()

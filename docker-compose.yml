@@ -1,0 +1,23 @@
+services:
+  selenium:
+    image: selenium/standalone-chrome:latest
+    shm_size: 2gb
+    ports:
+      - "4444:4444"
+
+  tests:
+    build: .
+    depends_on:
+      - selenium
+    environment:
+      SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
+      ARTIFACTS_DIR: "/artifacts"
+    volumes:
+      - ./artifacts:/artifacts
+      - ./artifacts/logs:/app/tests/framework_frontend/logger/logs
+    command: >
+      pytest -q tests/framework_frontend/test
+      -m "not gui"
+      --disable-warnings
+      --junitxml=/artifacts/junit.xml
+

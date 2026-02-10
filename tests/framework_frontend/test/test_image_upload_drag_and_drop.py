@@ -1,3 +1,7 @@
+import pytest
+
+pytestmark = pytest.mark.gui
+
 from pathlib import Path
 
 from config.config_reader import ConfigReader
