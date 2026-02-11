@@ -1,6 +1,8 @@
 import pytest
 import sys
 
+pytest.importorskip('pyautogui')
+
 from config.config_reader import ConfigReader
 from pages.upload_image_page import UploadImagePage
 

@@ -1,1 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="3" tests="13" time="181.862" timestamp="2026-02-11T10:37:52.583996+00:00" hostname="35dcdb097a1a"><testcase classname="" name="tests.framework_frontend.test.test_image_upload" time="0.000"><skipped message="collection skipped">('/app/tests/framework_frontend/test/test_image_upload.py', 3, "Skipped: could not import 'pyautogui': No module named 'pyautogui'")</skipped></testcase><testcase classname="" name="tests.framework_frontend.test.test_image_upload_dialog_window" time="0.000"><skipped message="collection skipped">('/app/tests/framework_frontend/test/test_image_upload_dialog_window.py', 3, "Skipped: could not import 'pyautogui': No module named 'pyautogui'")</skipped></testcase><testcase classname="" name="tests.framework_frontend.test.test_image_upload_drag_and_drop" time="0.000"><skipped message="collection skipped">('/app/tests/framework_frontend/test/test_image_upload_drag_and_drop.py', 3, "Skipped: could not import 'pyautogui': No module named 'pyautogui'")</skipped></testcase><testcase classname="tests.framework_frontend.test.test_alerts+js" name="test_alerts_js" time="7.856" /><testcase classname="tests.framework_frontend.test.test_alerts" name="test_alerts" time="7.970" /><testcase classname="tests.framework_frontend.test.test_alerts_and_contextclick" name="test_alerts_and_context_click" time="5.979" /><testcase classname="tests.framework_frontend.test.test_basic_auth" name="test_basic_auth" time="62.797" /><testcase classname="tests.framework_frontend.test.test_dynamic_content" name="test_dynamic_content" time="26.332" /><testcase classname="tests.framework_frontend.test.test_frames_nested_frames" name="test_frames_nested_frames" time="9.870" /><testcase classname="tests.framework_frontend.test.test_horizontal_slider" name="test_horizontal_slider" time="6.113" /><testcase classname="tests.framework_frontend.test.test_hovers" name="test_hovers" time="19.477" /><testcase classname="tests.framework_frontend.test.test_infinity_scroll" name="test_infinite_scroll" time="28.218" /><testcase classname="tests.framework_frontend.test.test_window_handlers" name="test_window_handlers" time="7.130" /></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="3" failures="0" skipped="0" tests="3" time="0.269" timestamp="2026-02-11T18:22:35.183012+00:00" hostname="cea6beff4793"><testcase classname="" name="tests.framework_frontend.test.test_image_upload" time="0.000"><error message="collection failure">ImportError while importing test module '/app/tests/framework_frontend/test/test_image_upload.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/framework_frontend/test/test_image_upload.py:5: in &lt;module&gt;
+    from pages.upload_image_page import UploadImagePage
+tests/framework_frontend/pages/upload_image_page.py:1: in &lt;module&gt;
+    from utils.pyautogui import PyAutoGUIUtilities
+tests/framework_frontend/utils/pyautogui.py:5: in &lt;module&gt;
+    import pyautogui
+E   ModuleNotFoundError: No module named 'pyautogui'</error></testcase><testcase classname="" name="tests.framework_frontend.test.test_image_upload_dialog_window" time="0.000"><error message="collection failure">ImportError while importing test module '/app/tests/framework_frontend/test/test_image_upload_dialog_window.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/framework_frontend/test/test_image_upload_dialog_window.py:7: in &lt;module&gt;
+    from pages.upload_image_page import UploadImagePage
+tests/framework_frontend/pages/upload_image_page.py:1: in &lt;module&gt;
+    from utils.pyautogui import PyAutoGUIUtilities
+tests/framework_frontend/utils/pyautogui.py:5: in &lt;module&gt;
+    import pyautogui
+E   ModuleNotFoundError: No module named 'pyautogui'</error></testcase><testcase classname="" name="tests.framework_frontend.test.test_image_upload_drag_and_drop" time="0.000"><error message="collection failure">ImportError while importing test module '/app/tests/framework_frontend/test/test_image_upload_drag_and_drop.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/framework_frontend/test/test_image_upload_drag_and_drop.py:7: in &lt;module&gt;
+    from pages.upload_image_page import UploadImagePage
+tests/framework_frontend/pages/upload_image_page.py:1: in &lt;module&gt;
+    from utils.pyautogui import PyAutoGUIUtilities
+tests/framework_frontend/utils/pyautogui.py:5: in &lt;module&gt;
+    import pyautogui
+E   ModuleNotFoundError: No module named 'pyautogui'</error></testcase></testsuite></testsuites>

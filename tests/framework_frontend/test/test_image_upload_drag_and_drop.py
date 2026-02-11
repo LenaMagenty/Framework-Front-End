@@ -1,6 +1,8 @@
 import pytest
 import sys
 
+pytest.importorskip('pyautogui')
+
 from pathlib import Path
 
 from config.config_reader import ConfigReader
