@@ -1,4 +1,4 @@
-FROM python:3.15-slim
+FROM python:3.12-slim
 
 ENV PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
 
@@ -11,4 +11,4 @@ COPY . /app
 
 RUN mkdir -p /artifacts
 
-CMD ["pytest", "-q", "tests/framework_frontend/test", "--disable-warnings", "--junitxml=/artifacts/junit.xml"]
+CMD ["pytest", "-q", "tests/framework_frontend/test", "-m", "not gui", "--disable-warnings", "--junitxml=/artifacts/junit.xml"]

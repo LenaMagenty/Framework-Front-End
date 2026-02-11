@@ -15,9 +15,3 @@ services:
     volumes:
       - ./artifacts:/artifacts
       - ./artifacts/logs:/app/tests/framework_frontend/logger/logs
-    command: >
-      pytest -q tests/framework_frontend/test
-      -m "not gui"
-      --disable-warnings
-      --junitxml=/artifacts/junit.xml
-
