@@ -1,5 +1,7 @@
 import pytest
 
+pytest.importorskip('pyautogui')
+
 pytestmark = pytest.mark.gui
 
 from pathlib import Path

@@ -34,6 +34,14 @@ class Waits:
             Logger.error(f'{self}: {err}')
             raise
 
+    def wait_for_frame_and_switch(self, locator: tuple[str, str]):
+        Logger.info(f'{self}: wait for frame and switch {locator}')
+        try:
+            return self._wait.until(EC.frame_to_be_available_and_switch_to_it(locator))
+        except TimeoutException as err:
+            Logger.error(f'{self}: {err}')
+            raise
+
     def is_present(self, locator, timeout: float | None = None) -> bool:
         Logger.info(f'{self}: check present {locator}')
         wait = self._wait if timeout is None else WebDriverWait(self._browser.driver, timeout)
