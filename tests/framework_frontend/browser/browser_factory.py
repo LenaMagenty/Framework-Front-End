@@ -22,16 +22,9 @@ class BrowserFactory:
         if options is None:
             options = []
 
-        remote_url = os.getenv('SELENIUM_REMOTE_URL')
-
         Logger.info(
             f"Start webdriver '{driver_name}' with options '{options}'"
         )
-
-        if remote_url:
-            Logger.info(
-                f"Use remote webdriver. Remote URL: '{remote_url}'"
-            )
 
         if driver_name == AvailableDriverName.CHROME:
             chrome_options = webdriver.ChromeOptions()
@@ -40,11 +33,6 @@ class BrowserFactory:
             for option in options:
                 chrome_options.add_argument(option)
 
-            if remote_url:
-                driver = webdriver.Remote(
-                    command_executor=remote_url,
-                    options=chrome_options
-                )
             else:
                 driver = webdriver.Chrome(options=chrome_options)
 
