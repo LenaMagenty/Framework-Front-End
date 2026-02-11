@@ -1,8 +1,5 @@
 import pytest
-
-pytest.importorskip('pyautogui')
-
-pytestmark = pytest.mark.gui
+import sys
 
 from pathlib import Path
 
@@ -11,6 +8,10 @@ from pages.upload_image_page import UploadImagePage
 from utils.pyautogui import PyAutoGUIUtilities
 
 
+@pytest.mark.skipif(
+    sys.platform.startswith("linux"),
+    reason="PyAutoGUI tests are not supported on Linux"
+)
 def test_upload_image_via_dialog_window(browser):
     config = ConfigReader()
     browser.get(config.get('upload_image_url'))
