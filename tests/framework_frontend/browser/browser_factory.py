@@ -1,9 +1,7 @@
-import os
+import platform
 from enum import StrEnum
-
 from selenium import webdriver
 from selenium.webdriver.remote.webdriver import WebDriver
-
 from logger.logger import Logger
 
 
@@ -26,19 +24,18 @@ class BrowserFactory:
             f"Start webdriver '{driver_name}' with options '{options}'"
         )
 
-        if driver_name == AvailableDriverName.CHROME:
-            chrome_options = webdriver.ChromeOptions()
-            chrome_options.set_capability('pageLoadStrategy', 'eager')
-
-            for option in options:
-                chrome_options.add_argument(option)
-
-            else:
-                driver = webdriver.Chrome(options=chrome_options)
-
-        else:
+        if driver_name != AvailableDriverName.CHROME:
             raise NotImplementedError(
                 f"Driver '{driver_name}' not implemented."
             )
 
-        return driver
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.set_capability('pageLoadStrategy', 'eager')
+
+        if platform.system() == "Linux":
+            chrome_options.add_argument("--headless=new")
+
+        for option in options:
+            chrome_options.add_argument(option)
+
+        return webdriver.Chrome(options=chrome_options)

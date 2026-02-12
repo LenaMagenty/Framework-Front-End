@@ -1,0 +1,1773 @@
+2026-02-11T11:18:37 - INFO - WebElement[Dynamic content image #2]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg"
+2026-02-11T11:18:37 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-11T11:18:37 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-11T11:18:37 - INFO - WebElement[Dynamic content image #3]: get attribute "src"
+2026-02-11T11:18:37 - INFO - WebElement[Dynamic content image #3]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg"
+2026-02-11T11:18:37 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[4]")
+2026-02-11T11:18:47 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x5dc715b3c4ba <unknown>
+#1 0x5dc7155a5492 <unknown>
+#2 0x5dc7155fa9b6 <unknown>
+#3 0x5dc7155fabf1 <unknown>
+#4 0x5dc7156464d4 <unknown>
+#5 0x5dc715643700 <unknown>
+#6 0x5dc7155ec6a2 <unknown>
+#7 0x5dc7155ed491 <unknown>
+#8 0x5dc715b02479 <unknown>
+#9 0x5dc715b05391 <unknown>
+#10 0x5dc715aeea89 <unknown>
+#11 0x5dc715b05f4e <unknown>
+#12 0x5dc715ad5070 <unknown>
+#13 0x5dc715b29ca8 <unknown>
+#14 0x5dc715b29e78 <unknown>
+#15 0x5dc715b3b828 <unknown>
+#16 0x70315a4c7aa4 <unknown>
+#17 0x70315a554a64 __clone
+
+2026-02-11T11:18:48 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T11:18:48 - INFO - Use remote webdriver. Remote URL: 'http://selenium:4444/wd/hub'
+2026-02-11T11:18:48 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: get "https://demoqa.com/frames"
+2026-02-11T11:18:54 - INFO - FramesPage[FramesPage]: wait for open
+2026-02-11T11:18:54 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-02-11T11:18:54 - INFO - FramesPage[FramesPage]: ensure Alerts, Frame & Windows group opened
+2026-02-11T11:18:54 - INFO - Waits: check visible ('xpath', "//div[contains(@class,'element-group')][.//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']]//ul[contains(@class,'menu-list')]")
+2026-02-11T11:18:54 - INFO - Waits: wait for visible ('xpath', "//div[contains(@class,'element-group')][.//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']]//ul[contains(@class,'menu-list')]")
+2026-02-11T11:18:55 - INFO - FramesPage[FramesPage]: menu already opened
+2026-02-11T11:18:55 - INFO - FramesPage[FramesPage]: open Nested Frames from menu
+2026-02-11T11:18:55 - INFO - Waits: wait for clickable ('xpath', "//span[normalize-space()='Nested Frames']")
+2026-02-11T11:18:55 - INFO - WebElement[Nested Frames menu item]: click
+2026-02-11T11:18:55 - INFO - NestedFramesPage[NestedFramesPage]: wait for open
+2026-02-11T11:18:55 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Nested Frames']")
+2026-02-11T11:18:55 - INFO - NestedFramesPage[NestedFramesPage]: check Parent frame text is visible
+2026-02-11T11:18:55 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to frame
+2026-02-11T11:18:55 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-11T11:18:55 - INFO - Waits: wait for visible ('xpath', "//body[contains(normalize-space(.), 'Parent frame')]")
+2026-02-11T11:18:55 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to default content
+2026-02-11T11:18:55 - INFO - NestedFramesPage[NestedFramesPage]: check Child iframe text is visible
+2026-02-11T11:18:55 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to frame
+2026-02-11T11:18:55 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-11T11:18:55 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to frame
+2026-02-11T11:18:55 - INFO - Waits: wait for frame and switch ('xpath', '//iframe[@srcdoc]')
+2026-02-11T11:18:55 - INFO - Waits: wait for visible ('xpath', "//p[normalize-space()='Child Iframe']")
+2026-02-11T11:18:56 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to default content
+2026-02-11T11:18:56 - INFO - FramesPage[FramesPage]: open Frames from menu
+2026-02-11T11:18:56 - INFO - Waits: wait for clickable ('xpath', "//span[normalize-space()='Frames']")
+2026-02-11T11:18:56 - INFO - WebElement[Frames menu item]: click
+2026-02-11T11:18:56 - INFO - FramesPage[FramesPage]: wait for open
+2026-02-11T11:18:56 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-02-11T11:18:56 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to frame
+2026-02-11T11:18:56 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-11T11:18:56 - INFO - Waits: wait for presence ('id', 'sampleHeading')
+2026-02-11T11:18:56 - INFO - WebElement[Frame text]: get text
+2026-02-11T11:18:56 - INFO - WebElement[Frame text]: text = "This is a sample page"
+2026-02-11T11:18:56 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to default content
+2026-02-11T11:18:56 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to frame
+2026-02-11T11:18:56 - INFO - Waits: wait for frame and switch ('id', 'frame2')
+2026-02-11T11:18:57 - INFO - Waits: wait for presence ('id', 'sampleHeading')
+2026-02-11T11:18:57 - INFO - WebElement[Frame text]: get text
+2026-02-11T11:18:57 - INFO - WebElement[Frame text]: text = "This is a sample page"
+2026-02-11T11:18:57 - INFO - Browser[b4cc911f2b3f9e8751c7ccc59eab0225]: switch to default content
+2026-02-11T11:18:57 - INFO - top frame text = "This is a sample page"
+2026-02-11T11:18:57 - INFO - bottom frame text = "This is a sample page"
+2026-02-11T11:18:57 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T11:18:57 - INFO - Use remote webdriver. Remote URL: 'http://selenium:4444/wd/hub'
+2026-02-11T11:18:58 - INFO - Browser[4814dc9a830d0d00a74fb2f1b3775de3]: get "https://the-internet.herokuapp.com/horizontal_slider"
+2026-02-11T18:35:01 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:16 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:22 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:27 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:33 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:37 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:37 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:38 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:38 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-11T18:35:39 - INFO - Start webdriver 'chrome' with options '['--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:49:25 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:49:27 - INFO - Browser[7d6165de7ce1b1c4df6ebf38a418d910]: get "https://the-internet.herokuapp.com/javascript_alerts"
+2026-02-12T10:49:33 - INFO - AlertsPage[AlertsPage]: wait for open
+2026-02-12T10:49:33 - INFO - Waits: wait for presence ('xpath', "//button[@onclick='jsAlert()']")
+2026-02-12T10:49:33 - INFO - Browser[7d6165de7ce1b1c4df6ebf38a418d910]: execute script = "jsAlert();" with args = "()"
+2026-02-12T10:49:33 - INFO - Alerts: wait alert present
+2026-02-12T10:49:33 - INFO - Alerts: switch to alert
+2026-02-12T10:49:33 - INFO - Alerts: wait alert present
+2026-02-12T10:49:33 - INFO - Alerts: switch to alert
+2026-02-12T10:49:33 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:49:33 - INFO - Label[Result]: get text
+2026-02-12T10:49:33 - INFO - Label[Result]: text = "You successfully clicked an alert"
+2026-02-12T10:49:33 - INFO - Browser[7d6165de7ce1b1c4df6ebf38a418d910]: execute script = "jsConfirm();" with args = "()"
+2026-02-12T10:49:34 - INFO - Alerts: wait alert present
+2026-02-12T10:49:34 - INFO - Alerts: switch to alert
+2026-02-12T10:49:34 - INFO - Alerts: wait alert present
+2026-02-12T10:49:34 - INFO - Alerts: switch to alert
+2026-02-12T10:49:34 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:49:34 - INFO - Label[Result]: get text
+2026-02-12T10:49:34 - INFO - Label[Result]: text = "You clicked: Ok"
+2026-02-12T10:49:34 - INFO - Browser[7d6165de7ce1b1c4df6ebf38a418d910]: execute script = "jsPrompt();" with args = "()"
+2026-02-12T10:49:34 - INFO - Alerts: wait alert present
+2026-02-12T10:49:34 - INFO - Alerts: switch to alert
+2026-02-12T10:49:34 - INFO - Alerts: wait alert present
+2026-02-12T10:49:34 - INFO - Alerts: switch to alert
+2026-02-12T10:49:34 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:49:34 - INFO - Label[Result]: get text
+2026-02-12T10:49:34 - INFO - Label[Result]: text = "You entered: yBOAAA"
+2026-02-12T10:49:34 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:49:35 - INFO - Browser[c9c87315603dba43dfb4e485be52143e]: get "https://the-internet.herokuapp.com/javascript_alerts"
+2026-02-12T10:49:40 - INFO - AlertsPage[AlertsPage]: wait for open
+2026-02-12T10:49:40 - INFO - Waits: wait for presence ('xpath', "//button[@onclick='jsAlert()']")
+2026-02-12T10:49:40 - INFO - Waits: wait for clickable ('xpath', "//button[@onclick='jsAlert()']")
+2026-02-12T10:49:40 - INFO - Button[Click for JS Alert]: click
+2026-02-12T10:49:41 - INFO - Alerts: wait alert present
+2026-02-12T10:49:41 - INFO - Alerts: switch to alert
+2026-02-12T10:49:41 - INFO - Alerts: wait alert present
+2026-02-12T10:49:41 - INFO - Alerts: switch to alert
+2026-02-12T10:49:41 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:49:41 - INFO - Label[Result]: get text
+2026-02-12T10:49:41 - INFO - Label[Result]: text = "You successfully clicked an alert"
+2026-02-12T10:49:41 - INFO - Waits: wait for clickable ('xpath', "//button[@onclick='jsConfirm()']")
+2026-02-12T10:49:41 - INFO - Button[Click for JS Confirm]: click
+2026-02-12T10:49:41 - INFO - Alerts: wait alert present
+2026-02-12T10:49:41 - INFO - Alerts: switch to alert
+2026-02-12T10:49:41 - INFO - Alerts: wait alert present
+2026-02-12T10:49:41 - INFO - Alerts: switch to alert
+2026-02-12T10:49:41 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:49:41 - INFO - Label[Result]: get text
+2026-02-12T10:49:41 - INFO - Label[Result]: text = "You clicked: Ok"
+2026-02-12T10:49:41 - INFO - Waits: wait for clickable ('xpath', "//button[@onclick='jsPrompt()']")
+2026-02-12T10:49:41 - INFO - Button[Click for JS Prompt]: click
+2026-02-12T10:49:42 - INFO - Alerts: wait alert present
+2026-02-12T10:49:42 - INFO - Alerts: switch to alert
+2026-02-12T10:49:42 - INFO - Alerts: wait alert present
+2026-02-12T10:49:42 - INFO - Alerts: switch to alert
+2026-02-12T10:49:42 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:49:42 - INFO - Label[Result]: get text
+2026-02-12T10:49:42 - INFO - Label[Result]: text = "You entered: zDcvitBpFClyOf"
+2026-02-12T10:49:42 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:49:42 - INFO - Browser[21f937802ad564eab68981760c7d7063]: get "https://the-internet.herokuapp.com/context_menu"
+2026-02-12T10:49:48 - INFO - AlertsContextClickPage[AlertsContextClickPage]: wait for open
+2026-02-12T10:49:48 - INFO - Waits: wait for presence ('id', 'hot-spot')
+2026-02-12T10:49:48 - INFO - WebElement[Context click area]: context click
+2026-02-12T10:49:48 - INFO - Waits: wait for presence ('id', 'hot-spot')
+2026-02-12T10:49:48 - INFO - Alerts: wait alert present
+2026-02-12T10:49:48 - INFO - Alerts: switch to alert
+2026-02-12T10:49:48 - INFO - Alerts: wait alert present
+2026-02-12T10:49:48 - INFO - Alerts: switch to alert
+2026-02-12T10:49:49 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:49:49 - INFO - Browser[3cfca130993a41a3399cd8e425861065]: get "http://admin:admin@the-internet.herokuapp.com/basic_auth"
+2026-02-12T10:51:49 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:51:50 - INFO - Browser[622daec8166321c54bcd2186bb1319e6]: get "http://the-internet.herokuapp.com/dynamic_content"
+2026-02-12T10:53:50 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:53:51 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: get "https://demoqa.com/frames"
+2026-02-12T10:53:55 - INFO - FramesPage[FramesPage]: wait for open
+2026-02-12T10:53:55 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-02-12T10:53:56 - INFO - FramesPage[FramesPage]: ensure Alerts, Frame & Windows group opened
+2026-02-12T10:53:56 - INFO - Waits: check visible ('xpath', "//div[contains(@class,'element-group')][.//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']]//ul[contains(@class,'menu-list')]")
+2026-02-12T10:53:56 - INFO - Waits: wait for visible ('xpath', "//div[contains(@class,'element-group')][.//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']]//ul[contains(@class,'menu-list')]")
+2026-02-12T10:53:56 - INFO - FramesPage[FramesPage]: menu already opened
+2026-02-12T10:53:56 - INFO - FramesPage[FramesPage]: open Nested Frames from menu
+2026-02-12T10:53:56 - INFO - Waits: wait for clickable ('xpath', "//span[normalize-space()='Nested Frames']")
+2026-02-12T10:53:57 - INFO - WebElement[Nested Frames menu item]: click
+2026-02-12T10:53:57 - INFO - NestedFramesPage[NestedFramesPage]: wait for open
+2026-02-12T10:53:57 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Nested Frames']")
+2026-02-12T10:53:57 - INFO - NestedFramesPage[NestedFramesPage]: check Parent frame text is visible
+2026-02-12T10:53:57 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to frame
+2026-02-12T10:53:57 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-12T10:53:57 - INFO - Waits: wait for visible ('xpath', "//body[contains(normalize-space(.), 'Parent frame')]")
+2026-02-12T10:53:57 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to default content
+2026-02-12T10:53:57 - INFO - NestedFramesPage[NestedFramesPage]: check Child iframe text is visible
+2026-02-12T10:53:57 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to frame
+2026-02-12T10:53:57 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-12T10:53:57 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to frame
+2026-02-12T10:53:57 - INFO - Waits: wait for frame and switch ('xpath', '//iframe[@srcdoc]')
+2026-02-12T10:53:57 - INFO - Waits: wait for visible ('xpath', "//p[normalize-space()='Child Iframe']")
+2026-02-12T10:53:57 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to default content
+2026-02-12T10:53:57 - INFO - FramesPage[FramesPage]: open Frames from menu
+2026-02-12T10:53:57 - INFO - Waits: wait for clickable ('xpath', "//span[normalize-space()='Frames']")
+2026-02-12T10:53:57 - INFO - WebElement[Frames menu item]: click
+2026-02-12T10:53:58 - INFO - FramesPage[FramesPage]: wait for open
+2026-02-12T10:53:58 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-02-12T10:53:58 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to frame
+2026-02-12T10:53:58 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-12T10:53:58 - INFO - Waits: wait for presence ('id', 'sampleHeading')
+2026-02-12T10:53:58 - INFO - WebElement[Frame text]: get text
+2026-02-12T10:53:58 - INFO - WebElement[Frame text]: text = "This is a sample page"
+2026-02-12T10:53:58 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to default content
+2026-02-12T10:53:58 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to frame
+2026-02-12T10:53:58 - INFO - Waits: wait for frame and switch ('id', 'frame2')
+2026-02-12T10:53:58 - INFO - Waits: wait for presence ('id', 'sampleHeading')
+2026-02-12T10:53:58 - INFO - WebElement[Frame text]: get text
+2026-02-12T10:53:58 - INFO - WebElement[Frame text]: text = "This is a sample page"
+2026-02-12T10:53:58 - INFO - Browser[bf6dfa8a17b9d0209976827f15c00afc]: switch to default content
+2026-02-12T10:53:58 - INFO - top frame text = "This is a sample page"
+2026-02-12T10:53:58 - INFO - bottom frame text = "This is a sample page"
+2026-02-12T10:53:58 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:53:59 - INFO - Browser[0ba316f74290e4b87c255273b9bc9fcb]: get "https://the-internet.herokuapp.com/horizontal_slider"
+2026-02-12T10:54:04 - INFO - HorizontalSliderPage[HorizontalSliderPage]: wait for open
+2026-02-12T10:54:04 - INFO - Waits: wait for presence ('xpath', "//input[@type='range']")
+2026-02-12T10:54:04 - INFO - Set random value on horizontal slider: 1.5
+2026-02-12T10:54:04 - INFO - Set slider to value: target=1.5, step=0.5
+2026-02-12T10:54:04 - INFO - Waits: wait for presence ('id', 'range')
+2026-02-12T10:54:04 - INFO - Label[Slider value]: get text
+2026-02-12T10:54:04 - INFO - Label[Slider value]: text = "0"
+2026-02-12T10:54:04 - INFO - Waits: wait for visible ('xpath', "//input[@type='range']")
+2026-02-12T10:54:04 - INFO - Input[Horizontal slider]: send keys = ''
+2026-02-12T10:54:04 - INFO - Waits: wait for presence ('id', 'range')
+2026-02-12T10:54:04 - INFO - Label[Slider value]: get text
+2026-02-12T10:54:04 - INFO - Label[Slider value]: text = "1.5"
+2026-02-12T10:54:04 - INFO - Slider actual value = 1.5
+2026-02-12T10:54:04 - INFO - Waits: wait for presence ('id', 'range')
+2026-02-12T10:54:04 - INFO - Label[Slider value]: get text
+2026-02-12T10:54:04 - INFO - Label[Slider value]: text = "1.5"
+2026-02-12T10:54:04 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:54:05 - INFO - Browser[6ccab35fee231c481d2a52d829d4369f]: get "http://the-internet.herokuapp.com/hovers"
+2026-02-12T10:55:01 - INFO - HoversPage[HoversPage]: wait for open
+2026-02-12T10:55:01 - INFO - Waits: wait for presence ('id', 'content')
+2026-02-12T10:55:01 - INFO - HoversPage[HoversPage]: get users count
+2026-02-12T10:55:01 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[1]")
+2026-02-12T10:55:01 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[2]")
+2026-02-12T10:55:01 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[3]")
+2026-02-12T10:55:01 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[4]")
+2026-02-12T10:55:12 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x5ff660f41532 <unknown>
+#1 0x5ff660970496 <unknown>
+#2 0x5ff6609c264c <unknown>
+#3 0x5ff6609c2865 <unknown>
+#4 0x5ff660a0ce58 <unknown>
+#5 0x5ff6609e7b91 <unknown>
+#6 0x5ff660a0a69d <unknown>
+#7 0x5ff6609e7907 <unknown>
+#8 0x5ff6609b4c72 <unknown>
+#9 0x5ff6609b5ae5 <unknown>
+#10 0x5ff660f05d84 <unknown>
+#11 0x5ff660f090c6 <unknown>
+#12 0x5ff660f08b7e <unknown>
+#13 0x5ff660f09539 <unknown>
+#14 0x5ff660ef569a <unknown>
+#15 0x5ff660f098ba <unknown>
+#16 0x5ff660edd969 <unknown>
+#17 0x5ff660f2eb69 <unknown>
+#18 0x5ff660f2ed5d <unknown>
+#19 0x5ff660f4083e <unknown>
+#20 0x7b76672c0b7b <unknown>
+
+2026-02-12T10:55:12 - INFO - HoversPage[HoversPage]: get user number #1
+2026-02-12T10:55:12 - INFO - HoversPage[HoversPage]: get user name #1
+2026-02-12T10:55:12 - INFO - HoversPage[HoversPage]: hover user #1
+2026-02-12T10:55:12 - INFO - WebElement[User card #1]: move to element
+2026-02-12T10:55:12 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[1]")
+2026-02-12T10:55:12 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//h5)[1]")
+2026-02-12T10:55:12 - INFO - WebElement[User name #1]: get text
+2026-02-12T10:55:12 - INFO - WebElement[User name #1]: text = "name: user1"
+2026-02-12T10:55:12 - INFO - HoversPage[HoversPage]: open user profile #1
+2026-02-12T10:55:12 - INFO - HoversPage[HoversPage]: hover user #1
+2026-02-12T10:55:12 - INFO - WebElement[User card #1]: move to element
+2026-02-12T10:55:12 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[1]")
+2026-02-12T10:55:12 - INFO - Waits: wait for clickable ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//a)[1]")
+2026-02-12T10:55:12 - INFO - WebElement[User profile link #1]: click
+2026-02-12T10:55:13 - INFO - UserPage[UserPage]: wait for open
+2026-02-12T10:55:13 - INFO - Waits: wait for presence ('xpath', "//*[contains(text(),'Not Found')]")
+2026-02-12T10:55:13 - INFO - Browser[6ccab35fee231c481d2a52d829d4369f]: back
+2026-02-12T10:55:13 - INFO - HoversPage[HoversPage]: wait for open
+2026-02-12T10:55:13 - INFO - Waits: wait for presence ('id', 'content')
+2026-02-12T10:55:13 - INFO - HoversPage[HoversPage]: get user number #2
+2026-02-12T10:55:13 - INFO - HoversPage[HoversPage]: get user name #2
+2026-02-12T10:55:13 - INFO - HoversPage[HoversPage]: hover user #2
+2026-02-12T10:55:13 - INFO - WebElement[User card #2]: move to element
+2026-02-12T10:55:13 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[2]")
+2026-02-12T10:55:13 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//h5)[2]")
+2026-02-12T10:55:13 - INFO - WebElement[User name #2]: get text
+2026-02-12T10:55:13 - INFO - WebElement[User name #2]: text = "name: user2"
+2026-02-12T10:55:13 - INFO - HoversPage[HoversPage]: open user profile #2
+2026-02-12T10:55:13 - INFO - HoversPage[HoversPage]: hover user #2
+2026-02-12T10:55:13 - INFO - WebElement[User card #2]: move to element
+2026-02-12T10:55:13 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[2]")
+2026-02-12T10:55:14 - INFO - Waits: wait for clickable ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//a)[2]")
+2026-02-12T10:55:14 - INFO - WebElement[User profile link #2]: click
+2026-02-12T10:55:14 - INFO - UserPage[UserPage]: wait for open
+2026-02-12T10:55:14 - INFO - Waits: wait for presence ('xpath', "//*[contains(text(),'Not Found')]")
+2026-02-12T10:55:14 - INFO - Browser[6ccab35fee231c481d2a52d829d4369f]: back
+2026-02-12T10:55:14 - INFO - HoversPage[HoversPage]: wait for open
+2026-02-12T10:55:14 - INFO - Waits: wait for presence ('id', 'content')
+2026-02-12T10:55:14 - INFO - HoversPage[HoversPage]: get user number #3
+2026-02-12T10:55:14 - INFO - HoversPage[HoversPage]: get user name #3
+2026-02-12T10:55:14 - INFO - HoversPage[HoversPage]: hover user #3
+2026-02-12T10:55:14 - INFO - WebElement[User card #3]: move to element
+2026-02-12T10:55:14 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[3]")
+2026-02-12T10:55:14 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//h5)[3]")
+2026-02-12T10:55:14 - INFO - WebElement[User name #3]: get text
+2026-02-12T10:55:14 - INFO - WebElement[User name #3]: text = "name: user3"
+2026-02-12T10:55:14 - INFO - HoversPage[HoversPage]: open user profile #3
+2026-02-12T10:55:14 - INFO - HoversPage[HoversPage]: hover user #3
+2026-02-12T10:55:14 - INFO - WebElement[User card #3]: move to element
+2026-02-12T10:55:14 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[3]")
+2026-02-12T10:55:15 - INFO - Waits: wait for clickable ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//a)[3]")
+2026-02-12T10:55:15 - INFO - WebElement[User profile link #3]: click
+2026-02-12T10:55:15 - INFO - UserPage[UserPage]: wait for open
+2026-02-12T10:55:15 - INFO - Waits: wait for presence ('xpath', "//*[contains(text(),'Not Found')]")
+2026-02-12T10:55:15 - INFO - Browser[6ccab35fee231c481d2a52d829d4369f]: back
+2026-02-12T10:55:15 - INFO - HoversPage[HoversPage]: wait for open
+2026-02-12T10:55:15 - INFO - Waits: wait for presence ('id', 'content')
+2026-02-12T10:55:15 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:55:16 - INFO - Browser[72ddc3b9c64db610cc019396f4dea04c]: get "http://the-internet.herokuapp.com/infinite_scroll"
+2026-02-12T10:55:23 - INFO - InfinityScrollPage[InfinityScrollPage]: wait for open
+2026-02-12T10:55:23 - INFO - Waits: wait for presence ('xpath', "//*[@id='content']//h3[normalize-space()='Infinite Scroll']")
+2026-02-12T10:55:23 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll until paragraphs count == 36
+2026-02-12T10:55:23 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[1]"), timeout=0.3
+2026-02-12T10:55:23 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[2]"), timeout=0.3
+2026-02-12T10:55:24 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[3]"), timeout=0.3
+2026-02-12T10:55:24 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:24 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = 2
+2026-02-12T10:55:24 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 1, current=2
+2026-02-12T10:55:24 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[3]"), timeout=0.1
+2026-02-12T10:55:25 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:25 - INFO - Browser[72ddc3b9c64db610cc019396f4dea04c]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T10:55:25 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #3 appears
+2026-02-12T10:55:25 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[3]"), timeout=0.3
+2026-02-12T10:55:25 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 2, current=3
+2026-02-12T10:55:25 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[4]"), timeout=0.1
+2026-02-12T10:55:26 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:26 - INFO - Browser[72ddc3b9c64db610cc019396f4dea04c]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T10:55:26 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #4 appears
+2026-02-12T10:55:26 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[4]"), timeout=0.3
+2026-02-12T10:55:26 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 3, current=4
+2026-02-12T10:55:26 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[5]"), timeout=0.1
+2026-02-12T10:55:26 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:26 - INFO - Browser[72ddc3b9c64db610cc019396f4dea04c]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T10:55:26 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #5 appears
+2026-02-12T10:55:26 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[5]"), timeout=0.3
+2026-02-12T10:55:26 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 4, current=5
+2026-02-12T10:55:26 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.1
+2026-02-12T10:55:27 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:27 - INFO - Browser[72ddc3b9c64db610cc019396f4dea04c]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T10:55:27 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #6 appears
+2026-02-12T10:55:27 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:27 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:28 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:28 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:29 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:29 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:30 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:30 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:31 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:31 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:32 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:32 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:33 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:33 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:34 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:35 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:35 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:36 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:36 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:37 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:37 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T10:55:38 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x62ba36edf532 <unknown>
+#1 0x62ba3690e496 <unknown>
+#2 0x62ba3696064c <unknown>
+#3 0x62ba36960865 <unknown>
+#4 0x62ba369aae58 <unknown>
+#5 0x62ba36985b91 <unknown>
+#6 0x62ba369a869d <unknown>
+#7 0x62ba36985907 <unknown>
+#8 0x62ba36952c72 <unknown>
+#9 0x62ba36953ae5 <unknown>
+#10 0x62ba36ea3d84 <unknown>
+#11 0x62ba36ea70c6 <unknown>
+#12 0x62ba36ea6b7e <unknown>
+#13 0x62ba36ea7539 <unknown>
+#14 0x62ba36e9369a <unknown>
+#15 0x62ba36ea78ba <unknown>
+#16 0x62ba36e7b969 <unknown>
+#17 0x62ba36eccb69 <unknown>
+#18 0x62ba36eccd5d <unknown>
+#19 0x62ba36ede83e <unknown>
+#20 0x7865c55e8b7b <unknown>
+
+2026-02-12T10:55:38 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:55:38 - INFO - Browser[128af81ddd1698bebc26232d4f542c88]: get "https://the-internet.herokuapp.com/windows"
+2026-02-12T10:58:24 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:58:26 - INFO - Browser[5d10d597f11cf54940366047679859ad]: get "https://the-internet.herokuapp.com/javascript_alerts"
+2026-02-12T10:58:31 - INFO - AlertsPage[AlertsPage]: wait for open
+2026-02-12T10:58:31 - INFO - Waits: wait for presence ('xpath', "//button[@onclick='jsAlert()']")
+2026-02-12T10:58:31 - INFO - Browser[5d10d597f11cf54940366047679859ad]: execute script = "jsAlert();" with args = "()"
+2026-02-12T10:58:31 - INFO - Alerts: wait alert present
+2026-02-12T10:58:31 - INFO - Alerts: switch to alert
+2026-02-12T10:58:31 - INFO - Alerts: wait alert present
+2026-02-12T10:58:31 - INFO - Alerts: switch to alert
+2026-02-12T10:58:32 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:58:32 - INFO - Label[Result]: get text
+2026-02-12T10:58:32 - INFO - Label[Result]: text = "You successfully clicked an alert"
+2026-02-12T10:58:32 - INFO - Browser[5d10d597f11cf54940366047679859ad]: execute script = "jsConfirm();" with args = "()"
+2026-02-12T10:58:32 - INFO - Alerts: wait alert present
+2026-02-12T10:58:32 - INFO - Alerts: switch to alert
+2026-02-12T10:58:32 - INFO - Alerts: wait alert present
+2026-02-12T10:58:32 - INFO - Alerts: switch to alert
+2026-02-12T10:58:32 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:58:32 - INFO - Label[Result]: get text
+2026-02-12T10:58:32 - INFO - Label[Result]: text = "You clicked: Ok"
+2026-02-12T10:58:32 - INFO - Browser[5d10d597f11cf54940366047679859ad]: execute script = "jsPrompt();" with args = "()"
+2026-02-12T10:58:32 - INFO - Alerts: wait alert present
+2026-02-12T10:58:32 - INFO - Alerts: switch to alert
+2026-02-12T10:58:32 - INFO - Alerts: wait alert present
+2026-02-12T10:58:32 - INFO - Alerts: switch to alert
+2026-02-12T10:58:32 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:58:32 - INFO - Label[Result]: get text
+2026-02-12T10:58:32 - INFO - Label[Result]: text = "You entered: aezmsJqmFeTrP"
+2026-02-12T10:58:32 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:58:33 - INFO - Browser[0c3277ed125e5b1d053f34886125c107]: get "https://the-internet.herokuapp.com/javascript_alerts"
+2026-02-12T10:58:59 - INFO - AlertsPage[AlertsPage]: wait for open
+2026-02-12T10:58:59 - INFO - Waits: wait for presence ('xpath', "//button[@onclick='jsAlert()']")
+2026-02-12T10:58:59 - INFO - Waits: wait for clickable ('xpath', "//button[@onclick='jsAlert()']")
+2026-02-12T10:58:59 - INFO - Button[Click for JS Alert]: click
+2026-02-12T10:58:59 - INFO - Alerts: wait alert present
+2026-02-12T10:58:59 - INFO - Alerts: switch to alert
+2026-02-12T10:58:59 - INFO - Alerts: wait alert present
+2026-02-12T10:58:59 - INFO - Alerts: switch to alert
+2026-02-12T10:58:59 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:58:59 - INFO - Label[Result]: get text
+2026-02-12T10:58:59 - INFO - Label[Result]: text = "You successfully clicked an alert"
+2026-02-12T10:58:59 - INFO - Waits: wait for clickable ('xpath', "//button[@onclick='jsConfirm()']")
+2026-02-12T10:58:59 - INFO - Button[Click for JS Confirm]: click
+2026-02-12T10:58:59 - INFO - Alerts: wait alert present
+2026-02-12T10:58:59 - INFO - Alerts: switch to alert
+2026-02-12T10:58:59 - INFO - Alerts: wait alert present
+2026-02-12T10:58:59 - INFO - Alerts: switch to alert
+2026-02-12T10:58:59 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:58:59 - INFO - Label[Result]: get text
+2026-02-12T10:58:59 - INFO - Label[Result]: text = "You clicked: Ok"
+2026-02-12T10:58:59 - INFO - Waits: wait for clickable ('xpath', "//button[@onclick='jsPrompt()']")
+2026-02-12T10:58:59 - INFO - Button[Click for JS Prompt]: click
+2026-02-12T10:58:59 - INFO - Alerts: wait alert present
+2026-02-12T10:58:59 - INFO - Alerts: switch to alert
+2026-02-12T10:58:59 - INFO - Alerts: wait alert present
+2026-02-12T10:58:59 - INFO - Alerts: switch to alert
+2026-02-12T10:58:59 - INFO - Waits: wait for presence ('id', 'result')
+2026-02-12T10:58:59 - INFO - Label[Result]: get text
+2026-02-12T10:58:59 - INFO - Label[Result]: text = "You entered: vWgvKPCzBImyaD"
+2026-02-12T10:59:00 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:59:00 - INFO - Browser[ae7f60ae71537ea353ccdaec8585ca8b]: get "https://the-internet.herokuapp.com/context_menu"
+2026-02-12T10:59:12 - INFO - AlertsContextClickPage[AlertsContextClickPage]: wait for open
+2026-02-12T10:59:12 - INFO - Waits: wait for presence ('id', 'hot-spot')
+2026-02-12T10:59:12 - INFO - WebElement[Context click area]: context click
+2026-02-12T10:59:12 - INFO - Waits: wait for presence ('id', 'hot-spot')
+2026-02-12T10:59:12 - INFO - Alerts: wait alert present
+2026-02-12T10:59:12 - INFO - Alerts: switch to alert
+2026-02-12T10:59:12 - INFO - Alerts: wait alert present
+2026-02-12T10:59:12 - INFO - Alerts: switch to alert
+2026-02-12T10:59:12 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:59:13 - INFO - Browser[9ebfa4c701f00cbc260355583d22ea22]: get "http://admin:admin@the-internet.herokuapp.com/basic_auth"
+2026-02-12T10:59:24 - INFO - BasicAuthPage[BasicAuthPage]: wait for open
+2026-02-12T10:59:24 - INFO - Waits: wait for presence ('xpath', "//*[@id='content']//p[contains(text(),'Congratulations!')]")
+2026-02-12T10:59:24 - INFO - Waits: wait for presence ('xpath', "//*[@id='content']//p[contains(text(),'Congratulations!')]")
+2026-02-12T10:59:24 - INFO - Label[Basic auth success message]: get text
+2026-02-12T10:59:25 - INFO - Label[Basic auth success message]: text = "Congratulations! You must have the proper credentials."
+2026-02-12T10:59:25 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T10:59:26 - INFO - Browser[6a85de823a5f4d12abcab2f745bac36e]: get "http://the-internet.herokuapp.com/dynamic_content"
+2026-02-12T10:59:32 - INFO - DynamicContentPage[DynamicContentPage]: wait for open
+2026-02-12T10:59:32 - INFO - Waits: wait for presence ('xpath', "//div[contains(@class,'example')]//h3[normalize-space()='Dynamic Content']")
+2026-02-12T10:59:32 - INFO - DynamicContentPage[DynamicContentPage]: refresh until any two images match
+2026-02-12T10:59:32 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-02-12T10:59:32 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[1]")
+2026-02-12T10:59:33 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[1]")
+2026-02-12T10:59:33 - INFO - WebElement[Dynamic content image #1]: get attribute "src"
+2026-02-12T10:59:33 - INFO - WebElement[Dynamic content image #1]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg"
+2026-02-12T10:59:33 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[2]")
+2026-02-12T10:59:33 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[2]")
+2026-02-12T10:59:33 - INFO - WebElement[Dynamic content image #2]: get attribute "src"
+2026-02-12T10:59:33 - INFO - WebElement[Dynamic content image #2]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg"
+2026-02-12T10:59:33 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-12T10:59:33 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-12T10:59:33 - INFO - WebElement[Dynamic content image #3]: get attribute "src"
+2026-02-12T10:59:33 - INFO - WebElement[Dynamic content image #3]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-7.jpg"
+2026-02-12T10:59:33 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[4]")
+2026-02-12T10:59:43 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x604841b1e532 <unknown>
+#1 0x60484154d496 <unknown>
+#2 0x60484159f64c <unknown>
+#3 0x60484159f865 <unknown>
+#4 0x6048415e9e58 <unknown>
+#5 0x6048415c4b91 <unknown>
+#6 0x6048415e769d <unknown>
+#7 0x6048415c4907 <unknown>
+#8 0x604841591c72 <unknown>
+#9 0x604841592ae5 <unknown>
+#10 0x604841ae2d84 <unknown>
+#11 0x604841ae60c6 <unknown>
+#12 0x604841ae5b7e <unknown>
+#13 0x604841ae6539 <unknown>
+#14 0x604841ad269a <unknown>
+#15 0x604841ae68ba <unknown>
+#16 0x604841aba969 <unknown>
+#17 0x604841b0bb69 <unknown>
+#18 0x604841b0bd5d <unknown>
+#19 0x604841b1d83e <unknown>
+#20 0x77a6bc646b7b <unknown>
+
+2026-02-12T10:59:43 - INFO - DynamicContentPage[DynamicContentPage]: no duplicates yet (attempt=1), refresh
+2026-02-12T10:59:43 - INFO - Browser[6a85de823a5f4d12abcab2f745bac36e]: refresh
+2026-02-12T10:59:43 - INFO - DynamicContentPage[DynamicContentPage]: wait for open
+2026-02-12T10:59:43 - INFO - Waits: wait for presence ('xpath', "//div[contains(@class,'example')]//h3[normalize-space()='Dynamic Content']")
+2026-02-12T10:59:43 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-02-12T10:59:43 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[1]")
+2026-02-12T10:59:43 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[1]")
+2026-02-12T10:59:43 - INFO - WebElement[Dynamic content image #1]: get attribute "src"
+2026-02-12T10:59:43 - INFO - WebElement[Dynamic content image #1]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg"
+2026-02-12T10:59:43 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[2]")
+2026-02-12T10:59:43 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[2]")
+2026-02-12T10:59:43 - INFO - WebElement[Dynamic content image #2]: get attribute "src"
+2026-02-12T10:59:43 - INFO - WebElement[Dynamic content image #2]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-2.jpg"
+2026-02-12T10:59:43 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-12T10:59:43 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-12T10:59:43 - INFO - WebElement[Dynamic content image #3]: get attribute "src"
+2026-02-12T10:59:43 - INFO - WebElement[Dynamic content image #3]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg"
+2026-02-12T10:59:43 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[4]")
+2026-02-12T10:59:54 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x604841b1e532 <unknown>
+#1 0x60484154d496 <unknown>
+#2 0x60484159f64c <unknown>
+#3 0x60484159f865 <unknown>
+#4 0x6048415e9e58 <unknown>
+#5 0x6048415c4b91 <unknown>
+#6 0x6048415e769d <unknown>
+#7 0x6048415c4907 <unknown>
+#8 0x604841591c72 <unknown>
+#9 0x604841592ae5 <unknown>
+#10 0x604841ae2d84 <unknown>
+#11 0x604841ae60c6 <unknown>
+#12 0x604841ae5b7e <unknown>
+#13 0x604841ae6539 <unknown>
+#14 0x604841ad269a <unknown>
+#15 0x604841ae68ba <unknown>
+#16 0x604841aba969 <unknown>
+#17 0x604841b0bb69 <unknown>
+#18 0x604841b0bd5d <unknown>
+#19 0x604841b1d83e <unknown>
+#20 0x77a6bc646b7b <unknown>
+
+2026-02-12T10:59:54 - INFO - DynamicContentPage[DynamicContentPage]: no duplicates yet (attempt=2), refresh
+2026-02-12T10:59:54 - INFO - Browser[6a85de823a5f4d12abcab2f745bac36e]: refresh
+2026-02-12T10:59:54 - INFO - DynamicContentPage[DynamicContentPage]: wait for open
+2026-02-12T10:59:54 - INFO - Waits: wait for presence ('xpath', "//div[contains(@class,'example')]//h3[normalize-space()='Dynamic Content']")
+2026-02-12T10:59:54 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-02-12T10:59:54 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[1]")
+2026-02-12T10:59:54 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[1]")
+2026-02-12T10:59:54 - INFO - WebElement[Dynamic content image #1]: get attribute "src"
+2026-02-12T10:59:54 - INFO - WebElement[Dynamic content image #1]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-7.jpg"
+2026-02-12T10:59:54 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[2]")
+2026-02-12T10:59:54 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[2]")
+2026-02-12T10:59:54 - INFO - WebElement[Dynamic content image #2]: get attribute "src"
+2026-02-12T10:59:54 - INFO - WebElement[Dynamic content image #2]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg"
+2026-02-12T10:59:54 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-12T10:59:54 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-12T10:59:54 - INFO - WebElement[Dynamic content image #3]: get attribute "src"
+2026-02-12T10:59:54 - INFO - WebElement[Dynamic content image #3]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg"
+2026-02-12T10:59:54 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[4]")
+2026-02-12T11:00:05 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x604841b1e532 <unknown>
+#1 0x60484154d496 <unknown>
+#2 0x60484159f64c <unknown>
+#3 0x60484159f865 <unknown>
+#4 0x6048415e9e58 <unknown>
+#5 0x6048415c4b91 <unknown>
+#6 0x6048415e769d <unknown>
+#7 0x6048415c4907 <unknown>
+#8 0x604841591c72 <unknown>
+#9 0x604841592ae5 <unknown>
+#10 0x604841ae2d84 <unknown>
+#11 0x604841ae60c6 <unknown>
+#12 0x604841ae5b7e <unknown>
+#13 0x604841ae6539 <unknown>
+#14 0x604841ad269a <unknown>
+#15 0x604841ae68ba <unknown>
+#16 0x604841aba969 <unknown>
+#17 0x604841b0bb69 <unknown>
+#18 0x604841b0bd5d <unknown>
+#19 0x604841b1d83e <unknown>
+#20 0x77a6bc646b7b <unknown>
+
+2026-02-12T11:00:05 - INFO - DynamicContentPage[DynamicContentPage]: duplicate images found (attempt=3)
+2026-02-12T11:00:05 - INFO - DynamicContentPage[DynamicContentPage]: get images src
+2026-02-12T11:00:05 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[1]")
+2026-02-12T11:00:05 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[1]")
+2026-02-12T11:00:05 - INFO - WebElement[Dynamic content image #1]: get attribute "src"
+2026-02-12T11:00:05 - INFO - WebElement[Dynamic content image #1]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-7.jpg"
+2026-02-12T11:00:05 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[2]")
+2026-02-12T11:00:05 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[2]")
+2026-02-12T11:00:05 - INFO - WebElement[Dynamic content image #2]: get attribute "src"
+2026-02-12T11:00:05 - INFO - WebElement[Dynamic content image #2]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg"
+2026-02-12T11:00:05 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-12T11:00:05 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[3]")
+2026-02-12T11:00:05 - INFO - WebElement[Dynamic content image #3]: get attribute "src"
+2026-02-12T11:00:05 - INFO - WebElement[Dynamic content image #3]: attribute src = "http://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-3.jpg"
+2026-02-12T11:00:05 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'large-2')]//img)[4]")
+2026-02-12T11:00:15 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x604841b1e532 <unknown>
+#1 0x60484154d496 <unknown>
+#2 0x60484159f64c <unknown>
+#3 0x60484159f865 <unknown>
+#4 0x6048415e9e58 <unknown>
+#5 0x6048415c4b91 <unknown>
+#6 0x6048415e769d <unknown>
+#7 0x6048415c4907 <unknown>
+#8 0x604841591c72 <unknown>
+#9 0x604841592ae5 <unknown>
+#10 0x604841ae2d84 <unknown>
+#11 0x604841ae60c6 <unknown>
+#12 0x604841ae5b7e <unknown>
+#13 0x604841ae6539 <unknown>
+#14 0x604841ad269a <unknown>
+#15 0x604841ae68ba <unknown>
+#16 0x604841aba969 <unknown>
+#17 0x604841b0bb69 <unknown>
+#18 0x604841b0bd5d <unknown>
+#19 0x604841b1d83e <unknown>
+#20 0x77a6bc646b7b <unknown>
+
+2026-02-12T11:00:15 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T11:00:16 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: get "https://demoqa.com/frames"
+2026-02-12T11:00:20 - INFO - FramesPage[FramesPage]: wait for open
+2026-02-12T11:00:20 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-02-12T11:00:20 - INFO - FramesPage[FramesPage]: ensure Alerts, Frame & Windows group opened
+2026-02-12T11:00:20 - INFO - Waits: check visible ('xpath', "//div[contains(@class,'element-group')][.//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']]//ul[contains(@class,'menu-list')]")
+2026-02-12T11:00:20 - INFO - Waits: wait for visible ('xpath', "//div[contains(@class,'element-group')][.//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']]//ul[contains(@class,'menu-list')]")
+2026-02-12T11:00:20 - INFO - FramesPage[FramesPage]: menu already opened
+2026-02-12T11:00:20 - INFO - FramesPage[FramesPage]: open Nested Frames from menu
+2026-02-12T11:00:20 - INFO - Waits: wait for clickable ('xpath', "//span[normalize-space()='Nested Frames']")
+2026-02-12T11:00:20 - INFO - WebElement[Nested Frames menu item]: click
+2026-02-12T11:00:21 - INFO - NestedFramesPage[NestedFramesPage]: wait for open
+2026-02-12T11:00:21 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Nested Frames']")
+2026-02-12T11:00:21 - INFO - NestedFramesPage[NestedFramesPage]: check Parent frame text is visible
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to frame
+2026-02-12T11:00:21 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-12T11:00:21 - INFO - Waits: wait for visible ('xpath', "//body[contains(normalize-space(.), 'Parent frame')]")
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to default content
+2026-02-12T11:00:21 - INFO - NestedFramesPage[NestedFramesPage]: check Child iframe text is visible
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to frame
+2026-02-12T11:00:21 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to frame
+2026-02-12T11:00:21 - INFO - Waits: wait for frame and switch ('xpath', '//iframe[@srcdoc]')
+2026-02-12T11:00:21 - INFO - Waits: wait for visible ('xpath', "//p[normalize-space()='Child Iframe']")
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to default content
+2026-02-12T11:00:21 - INFO - FramesPage[FramesPage]: open Frames from menu
+2026-02-12T11:00:21 - INFO - Waits: wait for clickable ('xpath', "//span[normalize-space()='Frames']")
+2026-02-12T11:00:21 - INFO - WebElement[Frames menu item]: click
+2026-02-12T11:00:21 - INFO - FramesPage[FramesPage]: wait for open
+2026-02-12T11:00:21 - INFO - Waits: wait for presence ('xpath', "//*[@id='framesWrapper']//h1[normalize-space()='Frames']")
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to frame
+2026-02-12T11:00:21 - INFO - Waits: wait for frame and switch ('id', 'frame1')
+2026-02-12T11:00:21 - INFO - Waits: wait for presence ('id', 'sampleHeading')
+2026-02-12T11:00:21 - INFO - WebElement[Frame text]: get text
+2026-02-12T11:00:21 - INFO - WebElement[Frame text]: text = "This is a sample page"
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to default content
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to frame
+2026-02-12T11:00:21 - INFO - Waits: wait for frame and switch ('id', 'frame2')
+2026-02-12T11:00:21 - INFO - Waits: wait for presence ('id', 'sampleHeading')
+2026-02-12T11:00:21 - INFO - WebElement[Frame text]: get text
+2026-02-12T11:00:21 - INFO - WebElement[Frame text]: text = "This is a sample page"
+2026-02-12T11:00:21 - INFO - Browser[97225dc7238446f0be6077a00e910f73]: switch to default content
+2026-02-12T11:00:21 - INFO - top frame text = "This is a sample page"
+2026-02-12T11:00:21 - INFO - bottom frame text = "This is a sample page"
+2026-02-12T11:00:21 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T11:00:22 - INFO - Browser[8d7906d08a374311cdeb5e720ce23f4e]: get "https://the-internet.herokuapp.com/horizontal_slider"
+2026-02-12T11:00:27 - INFO - HorizontalSliderPage[HorizontalSliderPage]: wait for open
+2026-02-12T11:00:27 - INFO - Waits: wait for presence ('xpath', "//input[@type='range']")
+2026-02-12T11:00:27 - INFO - Set random value on horizontal slider: 0.5
+2026-02-12T11:00:27 - INFO - Set slider to value: target=0.5, step=0.5
+2026-02-12T11:00:27 - INFO - Waits: wait for presence ('id', 'range')
+2026-02-12T11:00:27 - INFO - Label[Slider value]: get text
+2026-02-12T11:00:27 - INFO - Label[Slider value]: text = "0"
+2026-02-12T11:00:27 - INFO - Waits: wait for visible ('xpath', "//input[@type='range']")
+2026-02-12T11:00:27 - INFO - Input[Horizontal slider]: send keys = ''
+2026-02-12T11:00:27 - INFO - Waits: wait for presence ('id', 'range')
+2026-02-12T11:00:27 - INFO - Label[Slider value]: get text
+2026-02-12T11:00:27 - INFO - Label[Slider value]: text = "0.5"
+2026-02-12T11:00:27 - INFO - Slider actual value = 0.5
+2026-02-12T11:00:27 - INFO - Waits: wait for presence ('id', 'range')
+2026-02-12T11:00:27 - INFO - Label[Slider value]: get text
+2026-02-12T11:00:27 - INFO - Label[Slider value]: text = "0.5"
+2026-02-12T11:00:27 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T11:00:28 - INFO - Browser[bddbb9f90029697fd048711a41d61dac]: get "http://the-internet.herokuapp.com/hovers"
+2026-02-12T11:00:33 - INFO - HoversPage[HoversPage]: wait for open
+2026-02-12T11:00:33 - INFO - Waits: wait for presence ('id', 'content')
+2026-02-12T11:00:33 - INFO - HoversPage[HoversPage]: get users count
+2026-02-12T11:00:33 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[1]")
+2026-02-12T11:00:33 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[2]")
+2026-02-12T11:00:33 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[3]")
+2026-02-12T11:00:33 - INFO - Waits: check present ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[4]")
+2026-02-12T11:00:43 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x61e871686532 <unknown>
+#1 0x61e8710b5496 <unknown>
+#2 0x61e87110764c <unknown>
+#3 0x61e871107865 <unknown>
+#4 0x61e871151e58 <unknown>
+#5 0x61e87112cb91 <unknown>
+#6 0x61e87114f69d <unknown>
+#7 0x61e87112c907 <unknown>
+#8 0x61e8710f9c72 <unknown>
+#9 0x61e8710faae5 <unknown>
+#10 0x61e87164ad84 <unknown>
+#11 0x61e87164e0c6 <unknown>
+#12 0x61e87164db7e <unknown>
+#13 0x61e87164e539 <unknown>
+#14 0x61e87163a69a <unknown>
+#15 0x61e87164e8ba <unknown>
+#16 0x61e871622969 <unknown>
+#17 0x61e871673b69 <unknown>
+#18 0x61e871673d5d <unknown>
+#19 0x61e87168583e <unknown>
+#20 0x78be6669ab7b <unknown>
+
+2026-02-12T11:00:43 - INFO - HoversPage[HoversPage]: get user number #1
+2026-02-12T11:00:43 - INFO - HoversPage[HoversPage]: get user name #1
+2026-02-12T11:00:43 - INFO - HoversPage[HoversPage]: hover user #1
+2026-02-12T11:00:43 - INFO - WebElement[User card #1]: move to element
+2026-02-12T11:00:43 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[1]")
+2026-02-12T11:00:43 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//h5)[1]")
+2026-02-12T11:00:43 - INFO - WebElement[User name #1]: get text
+2026-02-12T11:00:43 - INFO - WebElement[User name #1]: text = "name: user1"
+2026-02-12T11:00:43 - INFO - HoversPage[HoversPage]: open user profile #1
+2026-02-12T11:00:43 - INFO - HoversPage[HoversPage]: hover user #1
+2026-02-12T11:00:43 - INFO - WebElement[User card #1]: move to element
+2026-02-12T11:00:43 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[1]")
+2026-02-12T11:00:44 - INFO - Waits: wait for clickable ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//a)[1]")
+2026-02-12T11:00:44 - INFO - WebElement[User profile link #1]: click
+2026-02-12T11:00:44 - INFO - UserPage[UserPage]: wait for open
+2026-02-12T11:00:44 - INFO - Waits: wait for presence ('xpath', "//*[contains(text(),'Not Found')]")
+2026-02-12T11:00:44 - INFO - Browser[bddbb9f90029697fd048711a41d61dac]: back
+2026-02-12T11:00:44 - INFO - HoversPage[HoversPage]: wait for open
+2026-02-12T11:00:44 - INFO - Waits: wait for presence ('id', 'content')
+2026-02-12T11:00:44 - INFO - HoversPage[HoversPage]: get user number #2
+2026-02-12T11:00:44 - INFO - HoversPage[HoversPage]: get user name #2
+2026-02-12T11:00:44 - INFO - HoversPage[HoversPage]: hover user #2
+2026-02-12T11:00:44 - INFO - WebElement[User card #2]: move to element
+2026-02-12T11:00:44 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[2]")
+2026-02-12T11:00:44 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//h5)[2]")
+2026-02-12T11:00:44 - INFO - WebElement[User name #2]: get text
+2026-02-12T11:00:44 - INFO - WebElement[User name #2]: text = "name: user2"
+2026-02-12T11:00:44 - INFO - HoversPage[HoversPage]: open user profile #2
+2026-02-12T11:00:44 - INFO - HoversPage[HoversPage]: hover user #2
+2026-02-12T11:00:44 - INFO - WebElement[User card #2]: move to element
+2026-02-12T11:00:44 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[2]")
+2026-02-12T11:00:45 - INFO - Waits: wait for clickable ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//a)[2]")
+2026-02-12T11:00:45 - INFO - WebElement[User profile link #2]: click
+2026-02-12T11:00:45 - INFO - UserPage[UserPage]: wait for open
+2026-02-12T11:00:45 - INFO - Waits: wait for presence ('xpath', "//*[contains(text(),'Not Found')]")
+2026-02-12T11:00:45 - INFO - Browser[bddbb9f90029697fd048711a41d61dac]: back
+2026-02-12T11:00:45 - INFO - HoversPage[HoversPage]: wait for open
+2026-02-12T11:00:45 - INFO - Waits: wait for presence ('id', 'content')
+2026-02-12T11:00:45 - INFO - HoversPage[HoversPage]: get user number #3
+2026-02-12T11:00:45 - INFO - HoversPage[HoversPage]: get user name #3
+2026-02-12T11:00:45 - INFO - HoversPage[HoversPage]: hover user #3
+2026-02-12T11:00:45 - INFO - WebElement[User card #3]: move to element
+2026-02-12T11:00:45 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[3]")
+2026-02-12T11:00:45 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//h5)[3]")
+2026-02-12T11:00:45 - INFO - WebElement[User name #3]: get text
+2026-02-12T11:00:45 - INFO - WebElement[User name #3]: text = "name: user3"
+2026-02-12T11:00:45 - INFO - HoversPage[HoversPage]: open user profile #3
+2026-02-12T11:00:45 - INFO - HoversPage[HoversPage]: hover user #3
+2026-02-12T11:00:45 - INFO - WebElement[User card #3]: move to element
+2026-02-12T11:00:45 - INFO - Waits: wait for presence ('xpath', "(//*[@id='content']//div[contains(@class,'figure')])[3]")
+2026-02-12T11:00:46 - INFO - Waits: wait for clickable ('xpath', "(//*[@id='content']//div[contains(@class,'figure')]//a)[3]")
+2026-02-12T11:00:46 - INFO - WebElement[User profile link #3]: click
+2026-02-12T11:00:46 - INFO - UserPage[UserPage]: wait for open
+2026-02-12T11:00:46 - INFO - Waits: wait for presence ('xpath', "//*[contains(text(),'Not Found')]")
+2026-02-12T11:00:46 - INFO - Browser[bddbb9f90029697fd048711a41d61dac]: back
+2026-02-12T11:00:46 - INFO - HoversPage[HoversPage]: wait for open
+2026-02-12T11:00:46 - INFO - Waits: wait for presence ('id', 'content')
+2026-02-12T11:00:46 - INFO - Start webdriver 'chrome' with options '['--headless=new', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']'
+2026-02-12T11:00:47 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: get "http://the-internet.herokuapp.com/infinite_scroll"
+2026-02-12T11:00:51 - INFO - InfinityScrollPage[InfinityScrollPage]: wait for open
+2026-02-12T11:00:51 - INFO - Waits: wait for presence ('xpath', "//*[@id='content']//h3[normalize-space()='Infinite Scroll']")
+2026-02-12T11:00:51 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll until paragraphs count == 36
+2026-02-12T11:00:51 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[1]"), timeout=0.3
+2026-02-12T11:00:51 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[2]"), timeout=0.3
+2026-02-12T11:00:52 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[3]"), timeout=0.3
+2026-02-12T11:00:53 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:53 - INFO - InfinityScrollPage[InfinityScrollPage]: paragraphs count = 2
+2026-02-12T11:00:53 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 1, current=2
+2026-02-12T11:00:53 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[3]"), timeout=0.1
+2026-02-12T11:00:53 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:53 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:53 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #3 appears
+2026-02-12T11:00:53 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[3]"), timeout=0.3
+2026-02-12T11:00:53 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 2, current=3
+2026-02-12T11:00:53 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[4]"), timeout=0.1
+2026-02-12T11:00:54 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:54 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:54 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #4 appears
+2026-02-12T11:00:54 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[4]"), timeout=0.3
+2026-02-12T11:00:54 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 3, current=4
+2026-02-12T11:00:54 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[5]"), timeout=0.1
+2026-02-12T11:00:54 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:54 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:54 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #5 appears
+2026-02-12T11:00:54 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[5]"), timeout=0.3
+2026-02-12T11:00:54 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 4, current=5
+2026-02-12T11:00:54 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.1
+2026-02-12T11:00:55 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:55 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:55 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #6 appears
+2026-02-12T11:00:55 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[6]"), timeout=0.3
+2026-02-12T11:00:55 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 5, current=6
+2026-02-12T11:00:55 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[7]"), timeout=0.1
+2026-02-12T11:00:55 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:55 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:55 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #7 appears
+2026-02-12T11:00:55 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[7]"), timeout=0.3
+2026-02-12T11:00:55 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 6, current=7
+2026-02-12T11:00:55 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[8]"), timeout=0.1
+2026-02-12T11:00:56 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:56 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:56 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #8 appears
+2026-02-12T11:00:56 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[8]"), timeout=0.3
+2026-02-12T11:00:56 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 7, current=8
+2026-02-12T11:00:56 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[9]"), timeout=0.1
+2026-02-12T11:00:57 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:57 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:57 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #9 appears
+2026-02-12T11:00:57 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[9]"), timeout=0.3
+2026-02-12T11:00:57 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 8, current=9
+2026-02-12T11:00:57 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[10]"), timeout=0.1
+2026-02-12T11:00:57 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:57 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:57 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #10 appears
+2026-02-12T11:00:57 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[10]"), timeout=0.3
+2026-02-12T11:00:57 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 9, current=10
+2026-02-12T11:00:57 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[11]"), timeout=0.1
+2026-02-12T11:00:58 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:58 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:58 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #11 appears
+2026-02-12T11:00:58 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[11]"), timeout=0.3
+2026-02-12T11:00:58 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 10, current=11
+2026-02-12T11:00:58 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[12]"), timeout=0.1
+2026-02-12T11:00:58 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:58 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:58 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #12 appears
+2026-02-12T11:00:58 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[12]"), timeout=0.3
+2026-02-12T11:00:58 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 11, current=12
+2026-02-12T11:00:58 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[13]"), timeout=0.1
+2026-02-12T11:00:59 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:59 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:59 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #13 appears
+2026-02-12T11:00:59 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[13]"), timeout=0.3
+2026-02-12T11:00:59 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 12, current=13
+2026-02-12T11:00:59 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[14]"), timeout=0.1
+2026-02-12T11:00:59 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:00:59 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:00:59 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #14 appears
+2026-02-12T11:00:59 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[14]"), timeout=0.3
+2026-02-12T11:00:59 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 13, current=14
+2026-02-12T11:00:59 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[15]"), timeout=0.1
+2026-02-12T11:01:00 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:00 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:00 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #15 appears
+2026-02-12T11:01:00 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[15]"), timeout=0.3
+2026-02-12T11:01:00 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 14, current=15
+2026-02-12T11:01:00 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[16]"), timeout=0.1
+2026-02-12T11:01:01 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:01 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:01 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #16 appears
+2026-02-12T11:01:01 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[16]"), timeout=0.3
+2026-02-12T11:01:01 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 15, current=16
+2026-02-12T11:01:01 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[17]"), timeout=0.1
+2026-02-12T11:01:01 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:01 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:01 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #17 appears
+2026-02-12T11:01:01 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[17]"), timeout=0.3
+2026-02-12T11:01:01 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 16, current=17
+2026-02-12T11:01:01 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[18]"), timeout=0.1
+2026-02-12T11:01:02 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:02 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:02 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #18 appears
+2026-02-12T11:01:02 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[18]"), timeout=0.3
+2026-02-12T11:01:02 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 17, current=18
+2026-02-12T11:01:02 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[19]"), timeout=0.1
+2026-02-12T11:01:02 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:02 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:02 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #19 appears
+2026-02-12T11:01:02 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[19]"), timeout=0.3
+2026-02-12T11:01:02 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 18, current=19
+2026-02-12T11:01:02 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[20]"), timeout=0.1
+2026-02-12T11:01:03 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:03 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:03 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #20 appears
+2026-02-12T11:01:03 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[20]"), timeout=0.3
+2026-02-12T11:01:03 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 19, current=20
+2026-02-12T11:01:03 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[21]"), timeout=0.1
+2026-02-12T11:01:04 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:04 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:04 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #21 appears
+2026-02-12T11:01:04 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[21]"), timeout=0.3
+2026-02-12T11:01:04 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 20, current=21
+2026-02-12T11:01:04 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[22]"), timeout=0.1
+2026-02-12T11:01:04 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:04 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:04 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #22 appears
+2026-02-12T11:01:04 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[22]"), timeout=0.3
+2026-02-12T11:01:04 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 21, current=22
+2026-02-12T11:01:04 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[23]"), timeout=0.1
+2026-02-12T11:01:05 - ERROR - Waits: Message: 
+Stacktrace:
+#0 0x561001bba532 <unknown>
+#1 0x5610015e9496 <unknown>
+#2 0x56100163b64c <unknown>
+#3 0x56100163b865 <unknown>
+#4 0x561001685e58 <unknown>
+#5 0x561001660b91 <unknown>
+#6 0x56100168369d <unknown>
+#7 0x561001660907 <unknown>
+#8 0x56100162dc72 <unknown>
+#9 0x56100162eae5 <unknown>
+#10 0x561001b7ed84 <unknown>
+#11 0x561001b820c6 <unknown>
+#12 0x561001b81b7e <unknown>
+#13 0x561001b82539 <unknown>
+#14 0x561001b6e69a <unknown>
+#15 0x561001b828ba <unknown>
+#16 0x561001b56969 <unknown>
+#17 0x561001ba7b69 <unknown>
+#18 0x561001ba7d5d <unknown>
+#19 0x561001bb983e <unknown>
+#20 0x79240ac95b7b <unknown>
+
+2026-02-12T11:01:05 - INFO - Browser[dd62e3445717c9d9749064a21af9e18d]: execute script = "window.scrollTo(0, document.body.scrollHeight)" with args = "()"
+2026-02-12T11:01:05 - INFO - InfinityScrollPage[InfinityScrollPage]: wait until paragraph #23 appears
+2026-02-12T11:01:05 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[23]"), timeout=0.3
+2026-02-12T11:01:05 - INFO - InfinityScrollPage[InfinityScrollPage]: scroll step 22, current=23
+2026-02-12T11:01:05 - INFO - Waits: check present quick ('xpath', "(//*[@id='content']//div[contains(@class,'jscroll-added')])[24]"), timeout=0.1
