@@ -1,7 +1,4 @@
 import pytest
-
-pytest.importorskip('pyautogui')
-
 import sys
 
 from pathlib import Path

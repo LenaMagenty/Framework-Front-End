@@ -1,4 +1,6 @@
-from utils.pyautogui import PyAutoGUIUtilities
+import sys
+if not sys.platform.startswith('linux'):
+    from utils.pyautogui import PyAutoGUIUtilities
 
 from elements.web_element import WebElement
 from elements.button import Button
